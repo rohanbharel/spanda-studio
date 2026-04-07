@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Epilogue:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,400&family=Syne:wght@600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-syne:     'Syne', sans-serif;
+  --font-caveat:   'Caveat', cursive;
+  --font-epilogue: 'Epilogue', sans-serif;
+  --font-fraunces: 'Fraunces', serif;
+}
+
+body {
+  background-color: #F5F0E8;
+  color: #1C1814;
+  font-family: var(--font-epilogue);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
