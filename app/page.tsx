@@ -1,58 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import NavBar from "./components/NavBar";
 
 export default function Home() {
   return (
     <>
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-ink px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" aria-label="SPANDA. home" className="flex items-center">
-          <Image
-            src="/logos/spanda-dark.png"
-            alt="SPANDA."
-            height={28}
-            width={112}
-            className="h-7 w-auto"
-            priority
-          />
-        </Link>
-
-        {/* Desktop nav links */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link
-            href="/work"
-            className="font-epilogue text-sm text-stone hover:text-parchment transition-colors"
-          >
-            Work
-          </Link>
-          <Link
-            href="/framework"
-            className="font-epilogue text-sm text-stone hover:text-parchment transition-colors"
-          >
-            Framework
-          </Link>
-          <Link
-            href="/start"
-            className="font-epilogue text-sm text-stone hover:text-parchment transition-colors"
-          >
-            Start
-          </Link>
-        </div>
-
-        {/* Mobile CTA */}
-        <Link
-          href="/start"
-          className="md:hidden font-epilogue text-sm text-saffron border border-saffron px-4 py-2"
-        >
-          Start →
-        </Link>
-      </nav>
+      <NavBar />
 
       {/* Hero — Moment 1 */}
       <main className="min-h-screen bg-ink flex flex-col items-center justify-center px-6 pt-20 text-center">
-        {/* Hero logo */}
+        {/* Hero logo — observed by NavBar to trigger nav logo visibility */}
         <Image
+          id="hero-logo"
           src="/logos/spanda-dark.png"
           alt="SPANDA."
           width={280}
@@ -88,7 +47,7 @@ export default function Home() {
 
         {/* Qualifier */}
         <p className="font-epilogue font-light text-[13px] text-stone mt-4">
-          ₹25,000&nbsp;&nbsp;·&nbsp;&nbsp;48 hours&nbsp;&nbsp;·&nbsp;&nbsp;Complete brand diagnosis
+          ₹35,000&nbsp;&nbsp;·&nbsp;&nbsp;48 hours&nbsp;&nbsp;·&nbsp;&nbsp;Complete brand diagnosis
         </p>
       </main>
 
@@ -497,12 +456,18 @@ export default function Home() {
               className="block md:hidden mx-auto"
               style={{ width: "138px", height: "auto" }}
             />
-            <p className="font-epilogue font-semibold text-[13px] text-stone mt-4">
+            <Link
+              href="https://spanda.studio"
+              className="font-epilogue font-semibold text-[13px] text-stone hover:text-parchment transition-colors mt-4 block"
+            >
               spanda.studio
-            </p>
-            <p className="font-epilogue font-light text-[13px] text-stone mt-1">
+            </Link>
+            <Link
+              href="mailto:hello@spanda.studio"
+              className="font-epilogue font-light text-[13px] text-stone hover:text-parchment transition-colors mt-1 block"
+            >
               hello@spanda.studio
-            </p>
+            </Link>
           </div>
 
         </div>
