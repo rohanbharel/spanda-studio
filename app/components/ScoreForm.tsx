@@ -1,0 +1,303 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+
+const pairs = [
+  {
+    unfound: "Explains what it does in three sentences, then apologises for the length.",
+    found: "One sentence. No qualifiers.",
+  },
+  {
+    unfound: "Looks different on Instagram than on a pitch deck than on a business card.",
+    found: "Unmistakable at every touchpoint.",
+  },
+  {
+    unfound: "Follows the category conventions because that's what the category does.",
+    found: "Knows exactly which conventions to break and why.",
+  },
+  {
+    unfound: "Could be any brand in the category with a logo swap.",
+    found: "Could only be this brand.",
+  },
+  {
+    unfound: "Repositions every two years when results disappoint.",
+    found: "Gets clearer and stronger over time because the foundation is real.",
+  },
+];
+
+const dimensions = [
+  { id: 1,  name: "Clarity",            question: "Can you explain what you do in one sentence?" },
+  { id: 2,  name: "Differentiation",    question: "Is there something only you can claim?" },
+  { id: 3,  name: "Consistency",        question: "Does your brand show up the same way everywhere?" },
+  { id: 4,  name: "Emotional Resonance",question: "Do people feel something when they encounter you?" },
+  { id: 5,  name: "Visual Identity",    question: "Does your visual system reflect your actual positioning?" },
+  { id: 6,  name: "Voice",              question: "Do you have a tone that is unmistakably yours?" },
+  { id: 7,  name: "Positioning",        question: "Do you own a distinct place in your category?" },
+  { id: 8,  name: "Purpose",            question: "Is there a conviction underneath the commercial?" },
+  { id: 9,  name: "Founder Alignment",  question: "Does the brand reflect who you actually are?" },
+  { id: 10, name: "Audience Clarity",   question: "Do you know exactly who you are not for?" },
+  { id: 11, name: "Proof",              question: "Can you demonstrate what you claim?" },
+  { id: 12, name: "Longevity",          question: "Is this built to endure or to trend?" },
+];
+
+interface BrandForm {
+  brandName: string;
+  website: string;
+  description: string;
+  competitors: string;
+  uniqueClaim: string;
+}
+
+interface ContactForm {
+  firstName: string;
+  email: string;
+  company: string;
+  city: string;
+}
+
+const emptyBrand: BrandForm = { brandName: "", website: "", description: "", competitors: "", uniqueClaim: "" };
+const emptyContact: ContactForm = { firstName: "", email: "", company: "", city: "" };
+
+export default function ScoreForm() {
+  const [brand, setBrand] = useState<BrandForm>(emptyBrand);
+  const [selected, setSelected] = useState<number | null>(null);
+  const [contact, setContact] = useState<ContactForm>(emptyContact);
+  const [submitted, setSubmitted] = useState(false);
+
+  const setBrandField = (field: keyof BrandForm) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+      setBrand((prev) => ({ ...prev, [field]: e.target.value }));
+
+  const setContactField = (field: keyof ContactForm) =>
+    (e: React.ChangeEvent<HTMLInputElement>) =>
+      setContact((prev) => ({ ...prev, [field]: e.target.value }));
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selected) return;
+    // TODO: Connect to Resend API
+    // On submit: trigger email to hello@spanda.studio
+    // with all form fields formatted for review
+    console.log("Score form submission:", { brand, selectedDimension: selected, contact });
+    setSubmitted(true);
+  };
+
+  const scrollToForm = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    document.getElementById("score-form")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const inputClass = "w-full font-epilogue font-light text-[15px] text-ink bg-transparent border border-ink px-4 py-3 focus:outline-none focus:border-saffron transition-colors";
+  const labelClass = "font-epilogue font-light text-[13px] text-ink mb-1 block";
+  const textareaClass = `${inputClass} resize-none`;
+
+  return (
+    <>
+      {/* STAGE 1 — Reading section (Ink) */}
+      <section className="bg-ink pt-32 pb-20 px-6">
+        <div className="max-w-[800px] mx-auto">
+
+          <h1 className="font-caveat text-[44px] md:text-[48px] text-parchment leading-tight">
+            What does a found brand look like?
+          </h1>
+
+          <p className="font-epilogue font-light text-[16px] text-stone mt-4 max-w-[560px] leading-relaxed">
+            Most brands can feel the gap. The distance between what they know
+            about themselves and what the market actually encounters.
+            These are the markers.
+          </p>
+
+          {/* Column headers — desktop only */}
+          <div className="hidden md:grid md:grid-cols-2 gap-4 mt-12 mb-4">
+            <p className="font-epilogue font-semibold text-[13px] text-stone">Unfound</p>
+            <p className="font-epilogue font-semibold text-[13px] text-saffron">Found</p>
+          </div>
+
+          {/* Pairs */}
+          <div className="mt-12 md:mt-0 space-y-4">
+            {pairs.map(({ unfound, found }, i) => (
+              <div key={i} className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-4">
+                <div
+                  className="px-5 py-4 border-b border-stone/10 md:border-b-0"
+                  style={{ background: "rgba(255,255,255,0.03)" }}
+                >
+                  <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone mb-2 md:hidden">
+                    Unfound
+                  </p>
+                  <p className="font-epilogue font-light text-[15px] text-stone leading-relaxed">
+                    {unfound}
+                  </p>
+                </div>
+                <div
+                  className="px-5 py-4"
+                  style={{ background: "rgba(201,120,32,0.07)", borderLeft: "2px solid rgba(201,120,32,0.4)" }}
+                >
+                  <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-saffron mb-2 md:hidden">
+                    Found
+                  </p>
+                  <p className="font-epilogue font-light text-[15px] text-parchment leading-relaxed">
+                    {found}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Divider + prompt + CTA */}
+          <hr
+            className="border-0 border-t mt-12"
+            style={{ borderColor: "rgba(140,130,119,0.2)" }}
+          />
+          <p className="font-epilogue font-light text-[16px] text-stone mt-8 text-center leading-relaxed">
+            Which side does your brand sit on?
+            <br />
+            The analysis will tell you — specifically, across the dimension that matters most to you.
+          </p>
+          <div className="mt-8 text-center">
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+            <a
+              href="#score-form"
+              onClick={scrollToForm}
+              className="font-epilogue font-semibold text-[16px] text-ink bg-saffron px-8 py-4 inline-block hover:opacity-90 transition-opacity"
+            >
+              Run the analysis →
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      {/* STAGE 2 — Form or Confirmation (Parchment) */}
+      {submitted ? (
+        <section id="score-form" className="bg-parchment py-24 px-6 text-center">
+          <div className="max-w-[480px] mx-auto">
+            <h2 className="font-caveat text-[40px] text-ink">We have it.</h2>
+            <p className="font-epilogue font-light text-[16px] text-stone mt-4 leading-relaxed">
+              Your Brand Dimension Analysis will be in your inbox by tomorrow
+              morning. Every submission is reviewed before it leaves our desk.
+            </p>
+            <p className="font-epilogue font-light text-[16px] text-stone mt-6">
+              If you want to go further —
+            </p>
+            <Link
+              href="/audit"
+              className="font-epilogue font-medium text-[16px] text-saffron mt-2 block hover:opacity-80 transition-opacity"
+            >
+              Begin the Audit →
+            </Link>
+          </div>
+        </section>
+      ) : (
+        <form
+          id="score-form"
+          onSubmit={handleSubmit}
+          className="bg-parchment py-20 px-6"
+        >
+          <div className="max-w-[680px] mx-auto">
+
+            {/* YOUR BRAND */}
+            <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
+              Your Brand
+            </p>
+
+            <div className="mt-6 space-y-5">
+              <div>
+                <label className={labelClass}>Brand name</label>
+                <input required type="text" value={brand.brandName} onChange={setBrandField("brandName")} className={inputClass} />
+              </div>
+              <div>
+                <label className={labelClass}>Website URL</label>
+                <input required type="url" value={brand.website} onChange={setBrandField("website")} className={inputClass} placeholder="https://" />
+              </div>
+              <div>
+                <label className={labelClass}>What do you do, and for whom?</label>
+                <textarea required rows={2} value={brand.description} onChange={setBrandField("description")} className={textareaClass} />
+              </div>
+              <div>
+                <label className={labelClass}>Name three competitors you actually think about.</label>
+                <textarea required rows={2} value={brand.competitors} onChange={setBrandField("competitors")} className={textareaClass} />
+              </div>
+              <div className="pt-8">
+                <label className="font-epilogue font-medium text-[15px] text-ink mb-2 block">
+                  The one thing you believe only your brand can honestly claim —
+                  even if you&rsquo;ve never said it publicly.
+                </label>
+                <textarea required rows={3} value={brand.uniqueClaim} onChange={setBrandField("uniqueClaim")} className={textareaClass} />
+                <p className="font-epilogue font-light text-[13px] text-stone mt-2">
+                  This is the most important question on the page. Take your time.
+                </p>
+              </div>
+            </div>
+
+            {/* DIMENSION SELECTION */}
+            <div className="mt-14">
+              <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
+                Choose Your Dimension
+              </p>
+              <p className="font-epilogue font-light text-[14px] text-stone mt-2 mb-4">
+                Pick the one you feel least certain about.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {dimensions.map(({ id, name, question }) => {
+                  const isActive = selected === id;
+                  return (
+                    <button
+                      key={id}
+                      type="button"
+                      onClick={() => setSelected(id)}
+                      className="text-left px-4 py-3 border transition-colors"
+                      style={{
+                        background: isActive ? "#EDE8DF" : "transparent",
+                        borderColor: isActive ? "#C97820" : "#D8D1C4",
+                        borderLeftWidth: isActive ? "3px" : "1px",
+                      }}
+                    >
+                      <p className="font-epilogue font-medium text-[14px] text-ink">{name}</p>
+                      <p className="font-epilogue font-light text-[13px] text-stone mt-0.5">{question}</p>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* CONTACT CAPTURE */}
+            <div className="mt-14">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                  <label className={labelClass}>First name</label>
+                  <input required type="text" value={contact.firstName} onChange={setContactField("firstName")} className={inputClass} />
+                </div>
+                <div>
+                  <label className={labelClass}>Email</label>
+                  <input required type="email" value={contact.email} onChange={setContactField("email")} className={inputClass} />
+                  <p className="font-epilogue font-light text-[13px] text-stone mt-2">
+                    Your analysis arrives here.
+                    Reviewed before it reaches you.
+                    No marketing emails. Ever.
+                  </p>
+                </div>
+                <div>
+                  <label className={labelClass}>Company</label>
+                  <input required type="text" value={contact.company} onChange={setContactField("company")} className={inputClass} />
+                </div>
+                <div>
+                  <label className={labelClass}>City</label>
+                  <input required type="text" value={contact.city} onChange={setContactField("city")} className={inputClass} />
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              className="mt-8 w-full font-epilogue font-semibold text-[16px] text-ink bg-saffron px-6 py-4 hover:opacity-90 transition-opacity"
+            >
+              Request the Analysis →
+            </button>
+
+          </div>
+        </form>
+      )}
+    </>
+  );
+}

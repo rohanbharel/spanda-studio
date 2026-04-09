@@ -1,11 +1,27 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
+export const metadata: Metadata = {
+  title: "SPANDA. — Brand Strategy & Identity",
+  description:
+    "Your brand is already there. We extract the one you already have. Brand strategy and identity consultancy India.",
+  alternates: { canonical: "https://spanda.studio" },
+  openGraph: {
+    title: "SPANDA. — Brand Strategy & Identity",
+    description:
+      "Your brand is already there. We extract the one you already have. Brand strategy and identity consultancy India.",
+    url: "https://spanda.studio",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
     <>
-      <NavBar />
+      <NavBar theme="dark" watchHeroLogo />
 
       {/* Hero — Moment 1 */}
       <main className="min-h-screen bg-ink flex flex-col items-center justify-center px-6 pt-20 text-center">
@@ -473,78 +489,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-ink border-t py-12 md:py-16 px-6" style={{ borderColor: "rgba(140,130,119,0.2)" }}>
-        <div className="max-w-[1100px] mx-auto">
-
-          {/* ── DESKTOP top row ── */}
-          <div className="hidden md:flex items-end justify-between">
-
-            {/* SPANDA block */}
-            <div className="pb-5">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logos/spanda-dark.png" alt="SPANDA." style={{ width: "256px", height: "auto" }} />
-              <p className="font-epilogue font-light text-[12px] text-stone mt-1.5">
-                Brand Strategy &amp; Identity
-              </p>
-            </div>
-
-            {/* Vertical rule */}
-            <div className="w-px h-12 shrink-0 self-end" style={{ backgroundColor: "rgba(140,130,119,0.2)" }} />
-
-            {/* PRAVAH block */}
-            <div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logos/pravah-dark.png" alt="PRAVAH" style={{ width: "189px", height: "auto" }} />
-              <p className="font-epilogue font-light text-[12px] text-stone mt-1.5">
-                Brand Activation
-              </p>
-              <Link
-                href="https://pravah.agency"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-epilogue font-light text-[11px] mt-1 block transition-colors hover:text-parchment"
-                style={{ color: "rgba(245,240,232,0.4)" }}
-              >
-                pravah.agency →
-              </Link>
-            </div>
-
-          </div>
-
-          {/* ── MOBILE top block ── */}
-          <div className="flex md:hidden flex-col items-center text-center">
-
-            {/* PRAVAH only — SPANDA hidden on mobile */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logos/pravah-dark.png" alt="PRAVAH" style={{ width: "95px", height: "auto" }} />
-            <p className="font-epilogue font-light text-[11px] text-stone mt-1.5">
-              Brand Activation
-            </p>
-            <Link
-              href="https://pravah.agency"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-epilogue font-light text-[11px] mt-1 transition-colors hover:text-parchment"
-              style={{ color: "rgba(245,240,232,0.4)" }}
-            >
-              pravah.agency →
-            </Link>
-
-          </div>
-
-          {/* ── Bottom row ── */}
-          <div
-            className="mt-8 pt-6 border-t text-center w-full"
-            style={{ borderColor: "rgba(140,130,119,0.1)" }}
-          >
-            <p className="font-epilogue font-light text-[12px]" style={{ color: "rgba(140,130,119,0.5)" }}>
-              © 2026 SPANDA. All rights reserved.
-            </p>
-          </div>
-
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
