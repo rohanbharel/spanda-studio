@@ -23,7 +23,7 @@ const empty: FormData = {
   question: "",
 };
 
-export default function AuditForm() {
+export default function AuditForm({ onSubmitted }: { onSubmitted?: () => void }) {
   const [form, setForm] = useState<FormData>(empty);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -47,6 +47,7 @@ export default function AuditForm() {
 
       if (!res.ok) throw new Error("Failed to send");
       setSubmitted(true);
+      onSubmitted?.();
     } catch {
       setError("Something went wrong. Email us directly at hello@spanda.studio");
     } finally {
