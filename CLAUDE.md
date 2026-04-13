@@ -44,6 +44,7 @@ Parchment: #F5F0E8   /* primary — all backgrounds (light) */
 Saffron:   #C97820   /* accent — ONE use per design, never more */
 Deep Navy: #0A2540   /* PRAVAH exclusive — never use on SPANDA */
 Stone:     #8C8277   /* secondary text, captions */
+Stone-accessible: #6B6259   /* text 13px and below on Parchment/Linen — WCAG contrast compliant */
 Dust:      #D8D1C4   /* rules, dividers */
 Linen:     #EDE8DF   /* card/section backgrounds */
 ```
@@ -148,6 +149,7 @@ Mobile: Logo + single CTA button.
 SPANDA. wordmark. spanda.studio. spanda.ink.
 Copyright line. Confidential note.
 Stone colour on Ink background.
+Footer hierarchy (SPANDA column): Logo → Brand Strategy & Identity (13px Stone) → spanda.studio (13px Stone) → Delhi, India. (12px Stone, mt-1).
 
 ---
 

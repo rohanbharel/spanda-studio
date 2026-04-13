@@ -231,6 +231,20 @@ Apr 2026 | Website | Confirm all pages are live and functional at spanda.studio 
 
 ---
 
-*Last updated: April 10, 2026*
+13 Apr	Website	Loop 1 fully closed — forms, email, domains, SEO, performance all live	Done	—
+13 Apr	Dev	Font self-hosting implemented — Google Fonts removed	Done	—
+13 Apr	Dev	Accessibility fixes — contrast, touch targets	Done	—
+13 Apr	SEO	Google Search Console verified — sitemap submitted	Done	—
+13 Apr	SEO	Category line added to homepage hero	Done	—
+13 Apr	SEO	Keyword seeding across audit and framework pages	Done	—
+13 Apr	Brand	Stone-accessible #6B6259 added to colour system	Done	—
+13 Apr	Website	Delhi, India added to footer — pending push	Open	Today
+13 Apr	Brand	Brand Strategy & Identity confirmed below SPANDA logo in footer	Open	Today
+13 Apr	Dev	CLAUDE.md update with colour and footer changes	Open	Today
+13 Apr	Brand	Our Story rewrite — Philosophy/Soul/Body	Open	Tomorrow
+13 Apr	Operations	Loop 2 — pre-work doc, report format, debrief email	Open	This Week
+13 Apr	Framework	Nine layers vs twelve dimensions — reconcile and fix site copy	Open	This Week
+
+*Last updated: April 12, 2026*
 *Source: Complete SPANDA/PRAVAH conversation history*
 *Owner: Ron*

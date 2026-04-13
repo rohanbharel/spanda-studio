@@ -27,6 +27,9 @@ export default function Footer() {
             <p className="font-epilogue font-light text-[13px] text-stone mt-1">
               spanda.studio
             </p>
+            <p className="font-epilogue font-light text-[12px] text-stone mt-1">
+              Delhi, India.
+            </p>
             <Link
               href="/about"
               className="md:hidden font-epilogue font-light text-[13px] text-stone hover:text-parchment transition-colors mt-2 min-h-[44px] flex items-center"
