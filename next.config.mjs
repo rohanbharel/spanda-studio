@@ -7,6 +7,12 @@ const nextConfig = {
         destination: "/",
         permanent: false,
       },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "pravah.agency" }],
+        destination: "https://spanda.studio/pravah-story",
+        permanent: true,
+      },
     ];
   },
 };

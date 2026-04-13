@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -13,10 +14,11 @@ export default function Footer() {
 
           {/* Left — SPANDA */}
           <div className="flex flex-col items-center md:items-start">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/logos/spanda-dark.png"
               alt="SPANDA."
+              width={6000}
+              height={388}
               style={{ width: "200px", height: "auto" }}
             />
             <p className="font-epilogue font-light text-[13px] text-stone mt-2">
@@ -35,10 +37,11 @@ export default function Footer() {
 
           {/* Right — PRAVAH */}
           <div className="flex flex-col items-center md:items-start">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/logos/pravah-dark.png"
               alt="PRAVAH"
+              width={6000}
+              height={884}
               style={{ width: "145px", height: "auto" }}
             />
             <p className="font-epilogue font-light text-[13px] text-stone mt-2">

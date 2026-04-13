@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
@@ -133,10 +134,11 @@ export default function AboutPage() {
             <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
               The Mark
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/logos/spanda-light.png"
               alt="SPANDA."
+              width={6000}
+              height={400}
               style={{ width: "200px", height: "auto", display: "block", marginBottom: "24px" }}
             />
             <p>
@@ -162,10 +164,11 @@ export default function AboutPage() {
         {/* PRAVAH transition — Linen block */}
         <section className="bg-linen py-16 px-6">
           <div className="max-w-[560px] mx-auto text-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/logos/pravah-light.png"
               alt="PRAVAH"
+              width={6000}
+              height={884}
               style={{ width: "189px", height: "auto", margin: "0 auto 24px" }}
             />
             <p className="font-epilogue font-light text-[16px] text-stone leading-relaxed">

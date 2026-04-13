@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -36,10 +37,12 @@ export default function NavBar({ theme, watchHeroLogo = false }: NavBarProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-ink px-6 py-4 flex items-center justify-between">
       <Link href="/" aria-label="SPANDA. home" className="flex items-center">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src="/logos/spanda-dark.png"
           alt="SPANDA."
+          width={6000}
+          height={388}
+          priority
           className={`h-auto transition-opacity duration-300 w-[160px] md:w-[200px] ${
             logoVisible ? "opacity-100" : "opacity-0"
           }`}

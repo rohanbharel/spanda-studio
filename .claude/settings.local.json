@@ -16,7 +16,10 @@
       "Bash(npm install:*)",
       "Bash(curl:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(python3 -c ':*)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/rohanbharel/ClaudeProjects/TheAgency/public/logos/*.png)"
     ]
   }
 }

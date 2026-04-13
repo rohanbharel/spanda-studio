@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
@@ -78,10 +79,11 @@ export default function PravahStoryPage() {
               <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
                 The Mark
               </p>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/logos/pravah-dark.png"
                 alt="PRAVAH"
+                width={6000}
+                height={884}
                 style={{ width: "189px", height: "auto", display: "block", marginBottom: "24px" }}
               />
               <p>
