@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     siteName: "SPANDA.",
     type: "website",
   },
+  verification: {
+    google: "waXurWBUoTfOLwufytj7sUkCNK6rAYHv59PSE2PKbIs",
+  },
 };
 
 export default function RootLayout({
