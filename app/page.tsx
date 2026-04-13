@@ -35,6 +35,9 @@ export default function Home() {
           className="w-[200px] md:w-[280px] h-auto"
           priority
         />
+        <p className="font-epilogue font-light text-[11px] text-stone uppercase tracking-wider w-[200px] md:w-[280px] text-center mt-[6px]">
+          Brand Strategy &amp; Identity
+        </p>
 
         {/* Gap */}
         <div className="h-12" />
@@ -47,11 +50,6 @@ export default function Home() {
         {/* Subheading */}
         <p className="font-epilogue font-light text-base md:text-xl text-stone mt-4 max-w-[560px]" spellCheck={false}>
           Most agencies build one for you. We extract the one you already have.
-        </p>
-
-        {/* Category + location */}
-        <p className="font-epilogue font-light text-[14px] text-stone mt-4">
-          Brand strategy and identity consultancy. Delhi, India.
         </p>
 
         {/* Gap */}
