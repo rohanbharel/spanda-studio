@@ -7,12 +7,12 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "SPANDA. — Brand Strategy & Identity",
   description:
-    "Your brand is already there. We extract the one you already have. Brand strategy and identity consultancy India.",
+    "SPANDA. is a brand strategy and identity consultancy for founders who want to find what their brand already is. Delhi, India.",
   alternates: { canonical: "https://spanda.studio" },
   openGraph: {
     title: "SPANDA. — Brand Strategy & Identity",
     description:
-      "Your brand is already there. We extract the one you already have. Brand strategy and identity consultancy India.",
+      "SPANDA. is a brand strategy and identity consultancy for founders who want to find what their brand already is. Delhi, India.",
     url: "https://spanda.studio",
     type: "website",
   },
@@ -47,6 +47,11 @@ export default function Home() {
         {/* Subheading */}
         <p className="font-epilogue font-light text-base md:text-xl text-stone mt-4 max-w-[560px]" spellCheck={false}>
           Most agencies build one for you. We extract the one you already have.
+        </p>
+
+        {/* Category + location */}
+        <p className="font-epilogue font-light text-[14px] text-stone mt-4">
+          Brand strategy and identity consultancy. Delhi, India.
         </p>
 
         {/* Gap */}

@@ -47,7 +47,7 @@ export default function AuditPageClient() {
       {/* Section 2 — The Deliverable */}
       <section className="bg-parchment py-20 md:py-32 px-6">
         <div className="max-w-[680px] mx-auto">
-          <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
+          <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone-accessible">
             What You Receive
           </p>
           <h2 className="font-caveat text-[44px] text-ink leading-tight mt-4">

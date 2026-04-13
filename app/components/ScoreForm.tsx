@@ -213,7 +213,7 @@ export default function ScoreForm() {
           <div className="max-w-[680px] mx-auto">
 
             {/* YOUR BRAND */}
-            <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
+            <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone-accessible">
               Your Brand
             </p>
 
@@ -240,7 +240,7 @@ export default function ScoreForm() {
                   even if you&rsquo;ve never said it publicly.
                 </label>
                 <textarea required rows={3} value={brand.uniqueClaim} onChange={setBrandField("uniqueClaim")} className={textareaClass} />
-                <p className="font-epilogue font-light text-[13px] text-stone mt-2">
+                <p className="font-epilogue font-light text-[13px] text-stone-accessible mt-2">
                   This is the most important question on the page. Take your time.
                 </p>
               </div>
@@ -248,7 +248,7 @@ export default function ScoreForm() {
 
             {/* DIMENSION SELECTION */}
             <div className="mt-14">
-              <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
+              <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone-accessible">
                 Choose Your Dimension
               </p>
               <p className="font-epilogue font-light text-[14px] text-stone mt-2 mb-4">
@@ -270,7 +270,7 @@ export default function ScoreForm() {
                       }}
                     >
                       <p className="font-epilogue font-medium text-[14px] text-ink">{name}</p>
-                      <p className="font-epilogue font-light text-[13px] text-stone mt-0.5">{question}</p>
+                      <p className="font-epilogue font-light text-[13px] text-stone-accessible mt-0.5">{question}</p>
                     </button>
                   );
                 })}
@@ -287,7 +287,7 @@ export default function ScoreForm() {
                 <div>
                   <label className={labelClass}>Email</label>
                   <input required type="email" value={contact.email} onChange={setContactField("email")} className={inputClass} />
-                  <p className="font-epilogue font-light text-[13px] text-stone mt-2">
+                  <p className="font-epilogue font-light text-[13px] text-stone-accessible mt-2">
                     Your analysis arrives here.
                     Reviewed before it reaches you.
                     No marketing emails. Ever.

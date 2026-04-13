@@ -57,7 +57,7 @@ export default function NavBar({ theme, watchHeroLogo = false }: NavBarProps) {
         <Link href="/framework" className={linkClass("/framework")}>
           Framework
         </Link>
-        <Link href="/audit" className={linkClass("/audit")}>
+        <Link href="/audit" aria-label="Begin the Brand Strength Audit" className={linkClass("/audit")}>
           Start
         </Link>
       </div>
@@ -65,6 +65,7 @@ export default function NavBar({ theme, watchHeroLogo = false }: NavBarProps) {
       {/* Mobile CTA */}
       <Link
         href="/audit"
+        aria-label="Begin the Brand Strength Audit"
         className="md:hidden font-epilogue font-medium text-[15px] text-saffron"
       >
         Start →

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | SPANDA.",
   },
   description:
-    "Your brand is already there. We extract the one you already have. Brand strategy and identity consultancy India.",
+    "SPANDA. is a brand strategy and identity consultancy for founders who want to find what their brand already is. Delhi, India.",
   metadataBase: new URL("https://spanda.studio"),
   openGraph: {
     siteName: "SPANDA.",

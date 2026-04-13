@@ -29,7 +29,7 @@ export default function Footer() {
             </p>
             <Link
               href="/about"
-              className="md:hidden font-epilogue font-light text-[13px] text-stone hover:text-parchment transition-colors mt-2"
+              className="md:hidden font-epilogue font-light text-[13px] text-stone hover:text-parchment transition-colors mt-2 min-h-[44px] flex items-center"
             >
               Our Story →
             </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
               href="https://pravah.agency"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-epilogue font-light text-[13px] text-stone hover:text-parchment transition-colors mt-1"
+              className="font-epilogue font-light text-[13px] text-stone hover:text-parchment transition-colors mt-1 min-h-[44px] flex items-center"
             >
               pravah.agency →
             </Link>
@@ -67,7 +67,7 @@ export default function Footer() {
           <p className="font-epilogue font-light text-[12px] text-stone mt-1">
             <Link
               href="mailto:hello@spanda.studio"
-              className="hover:text-parchment transition-colors"
+              className="hover:text-parchment transition-colors min-h-[44px] flex items-center justify-center"
             >
               hello@spanda.studio
             </Link>

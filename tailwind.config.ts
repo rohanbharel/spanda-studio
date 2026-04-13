@@ -14,6 +14,7 @@ const config: Config = {
         saffron:   "#C97820",
         navy:      "#0A2540",
         stone:     "#8C8277",
+        "stone-accessible": "#6B6259",
         dust:      "#D8D1C4",
         linen:     "#EDE8DF",
       },

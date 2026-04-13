@@ -6,12 +6,12 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "The Extraction Framework™",
   description:
-    "A proprietary 9-layer brand methodology built on one principle: the brand already exists. Our work is extraction, not construction.",
+    "A proprietary brand strategy framework with 9 layers and 3 phases, built on one principle: the brand already exists. Our work is extraction, not construction.",
   alternates: { canonical: "https://spanda.studio/framework" },
   openGraph: {
     title: "The Extraction Framework™ | SPANDA.",
     description:
-      "A proprietary 9-layer brand methodology built on one principle: the brand already exists. Our work is extraction, not construction.",
+      "A proprietary brand strategy framework with 9 layers and 3 phases, built on one principle: the brand already exists. Our work is extraction, not construction.",
     url: "https://spanda.studio/framework",
     type: "website",
   },

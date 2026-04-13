@@ -76,11 +76,11 @@ export default function AuditForm({ onSubmitted }: { onSubmitted?: () => void })
 
   const inputClass =
     "w-full font-epilogue font-light text-[15px] text-ink bg-transparent border border-ink px-4 py-3 focus:outline-none focus:border-saffron transition-colors";
-  const labelClass = "font-epilogue font-light text-[13px] text-stone mb-1 block";
+  const labelClass = "font-epilogue font-light text-[13px] text-stone-accessible mb-1 block";
 
   return (
     <form onSubmit={handleSubmit} className="mt-10">
-      <p className="font-epilogue font-light text-[13px] text-stone mb-6">
+      <p className="font-epilogue font-light text-[13px] text-stone-accessible mb-6">
         All fields are required.
       </p>
 

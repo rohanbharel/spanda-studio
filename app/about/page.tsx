@@ -7,12 +7,12 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "About the Work",
   description:
-    "SPANDA. was built by running our own framework on ourselves first. The origin story of a brand strategy consultancy built on extraction, not construction.",
+    "SPANDA. was built by running our own framework on ourselves first. The origin story of a brand strategy and identity consultancy in India, built on extraction, not construction.",
   alternates: { canonical: "https://spanda.studio/about" },
   openGraph: {
     title: "About the Work | SPANDA.",
     description:
-      "SPANDA. was built by running our own framework on ourselves first. The origin story of a brand strategy consultancy built on extraction, not construction.",
+      "SPANDA. was built by running our own framework on ourselves first. The origin story of a brand strategy and identity consultancy in India, built on extraction, not construction.",
     url: "https://spanda.studio/about",
     type: "website",
   },
