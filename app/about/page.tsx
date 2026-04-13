@@ -169,7 +169,7 @@ export default function AboutPage() {
               style={{ width: "189px", height: "auto", margin: "0 auto 24px" }}
             />
             <p className="font-epilogue font-light text-[16px] text-stone leading-relaxed">
-              PRAVAH was the second extraction. The activation agency born from
+              PRAVAH was the second extraction. The Creative agency born from
               the strategy consultancy. Its story follows the same process —
               different brand, same rigour, same framework, same refusal to
               decorate what should be expressed.

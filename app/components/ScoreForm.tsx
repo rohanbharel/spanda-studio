@@ -64,6 +64,8 @@ export default function ScoreForm() {
   const [selected, setSelected] = useState<number | null>(null);
   const [contact, setContact] = useState<ContactForm>(emptyContact);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const setBrandField = (field: keyof BrandForm) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
@@ -73,14 +75,28 @@ export default function ScoreForm() {
     (e: React.ChangeEvent<HTMLInputElement>) =>
       setContact((prev) => ({ ...prev, [field]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selected) return;
-    // TODO: Connect to Resend API
-    // On submit: trigger email to hello@spanda.studio
-    // with all form fields formatted for review
-    console.log("Score form submission:", { brand, selectedDimension: selected, contact });
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(null);
+
+    const dimension = dimensions.find((d) => d.id === selected);
+
+    try {
+      const res = await fetch("/api/score", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ brand, dimension, contact }),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Email us directly at hello@spanda.studio");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const scrollToForm = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -288,11 +304,18 @@ export default function ScoreForm() {
               </div>
             </div>
 
+            {error && (
+              <p className="font-epilogue font-light text-[13px] text-saffron mt-4">
+                {error}
+              </p>
+            )}
+
             <button
               type="submit"
-              className="mt-8 w-full font-epilogue font-semibold text-[16px] text-ink bg-saffron px-6 py-4 hover:opacity-90 transition-opacity"
+              disabled={submitting}
+              className="mt-8 w-full font-epilogue font-semibold text-[16px] text-ink bg-saffron px-6 py-4 hover:opacity-90 transition-opacity disabled:opacity-50"
             >
-              Request the Analysis →
+              {submitting ? "Sending…" : "Request the Analysis →"}
             </button>
 
           </div>

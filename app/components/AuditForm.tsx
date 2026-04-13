@@ -26,16 +26,32 @@ const empty: FormData = {
 export default function AuditForm() {
   const [form, setForm] = useState<FormData>(empty);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const set = (field: keyof FormData) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
       setForm((prev) => ({ ...prev, [field]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Connect to form backend (Resend/Supabase)
-    console.log("Audit form submission:", form);
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/audit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Email us directly at hello@spanda.studio");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -108,11 +124,18 @@ export default function AuditForm() {
         />
       </div>
 
+      {error && (
+        <p className="font-epilogue font-light text-[13px] text-saffron mt-4">
+          {error}
+        </p>
+      )}
+
       <button
         type="submit"
-        className="mt-8 w-full font-epilogue font-semibold text-[16px] text-ink bg-saffron px-6 py-4 hover:opacity-90 transition-opacity"
+        disabled={submitting}
+        className="mt-8 w-full font-epilogue font-semibold text-[16px] text-ink bg-saffron px-6 py-4 hover:opacity-90 transition-opacity disabled:opacity-50"
       >
-        Request the Audit →
+        {submitting ? "Sending…" : "Request the Audit →"}
       </button>
     </form>
   );
