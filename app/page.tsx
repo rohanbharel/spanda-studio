@@ -318,6 +318,65 @@ export default function Home() {
             One is a diagnosis. One is a transformation. Most clients start with the first.
           </p>
 
+          {/* Three ways to begin */}
+          <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone mt-12">
+            Three Ways to Begin
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+
+            {/* Card 1 — Brand Dimension Report */}
+            <div className="bg-linen border border-dust rounded-sm p-7 flex flex-col">
+              <h3 className="font-caveat text-[28px] text-ink leading-tight">
+                Brand Dimension Report
+              </h3>
+              <p className="font-epilogue font-light text-[14px] text-stone mt-2 leading-relaxed">
+                Free. One dimension. Delivered next business day.
+              </p>
+              <div className="grow" />
+              <Link
+                href="/score"
+                className="font-epilogue font-medium text-[15px] text-saffron mt-4 block hover:opacity-80 transition-opacity"
+              >
+                Request your free report →
+              </Link>
+            </div>
+
+            {/* Card 2 — Brand Strength Audit */}
+            <div className="bg-linen border border-dust rounded-sm p-7 flex flex-col">
+              <h3 className="font-caveat text-[28px] text-ink leading-tight">
+                Brand Strength Audit
+              </h3>
+              <p className="font-epilogue font-light text-[14px] text-stone mt-2 leading-relaxed">
+                ₹35,000. 12 dimensions. 48 hours. Debrief included.
+              </p>
+              <div className="grow" />
+              <Link
+                href="/audit"
+                className="font-epilogue font-medium text-[15px] text-saffron mt-4 block hover:opacity-80 transition-opacity"
+              >
+                Request the Audit →
+              </Link>
+            </div>
+
+            {/* Card 3 — Brand Sprint */}
+            <div className="bg-linen border border-dust rounded-sm p-7 flex flex-col">
+              <h3 className="font-caveat text-[28px] text-ink leading-tight">
+                Brand Sprint
+              </h3>
+              <p className="font-epilogue font-light text-[14px] text-stone mt-2 leading-relaxed">
+                The full extraction. One day. Brand OS delivered.
+              </p>
+              <div className="grow" />
+              <Link
+                href="/audit?offering=sprint"
+                className="font-epilogue font-medium text-[15px] text-ink mt-4 block hover:opacity-80 transition-opacity"
+              >
+                Request a conversation →
+              </Link>
+            </div>
+
+          </div>
+
           {/* Offer cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 

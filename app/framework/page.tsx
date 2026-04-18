@@ -6,12 +6,12 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "The Extraction Framework™",
   description:
-    "A proprietary brand strategy framework with 9 layers and 3 phases, built on one principle: the brand already exists. Our work is extraction, not construction.",
+    "The Extraction Framework™ — a proprietary brand methodology built on three phases: Excavate, Distil, Express. SPANDA. Brand Strategy & Identity.",
   alternates: { canonical: "https://spanda.studio/framework" },
   openGraph: {
     title: "The Extraction Framework™ | SPANDA.",
     description:
-      "A proprietary brand strategy framework with 9 layers and 3 phases, built on one principle: the brand already exists. Our work is extraction, not construction.",
+      "The Extraction Framework™ — a proprietary brand methodology built on three phases: Excavate, Distil, Express. SPANDA. Brand Strategy & Identity.",
     url: "https://spanda.studio/framework",
     type: "website",
   },
@@ -47,7 +47,7 @@ export default function FrameworkPage() {
             The Extraction Framework™
           </h1>
           <p className="font-fraunces italic text-[18px] md:text-[20px] text-stone mt-4">
-            Nine layers. Three phases. One question underneath all of it.
+            Three phases. One question underneath all of it.
           </p>
           <p className="font-fraunces italic text-[16px] md:text-[18px] text-stone mt-8 max-w-[600px] leading-relaxed">
             Most branding starts with a blank canvas. We start with the
