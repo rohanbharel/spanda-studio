@@ -37,7 +37,7 @@ export default function PravahStoryPage() {
         <div className="bg-ink pt-32 pb-24 px-6">
           <div className="max-w-[680px] mx-auto">
 
-            <h1 className="font-caveat text-[48px] md:text-[64px] text-parchment leading-tight" style={{ marginBottom: "32px" }}>PRAVAH</h1>
+            <h1 className="sr-only">The PRAVAH Story — Creative Agency by SPANDA.</h1>
 
             {/* Creative label */}
             <p
