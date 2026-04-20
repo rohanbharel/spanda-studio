@@ -78,8 +78,8 @@ export default function AuditPageClient() {
                 body: "Ranked list of what to address, in the order that creates the most impact on perception and conversion.",
               },
               {
-                title: "Sprint Readiness Assessment",
-                body: "A clear recommendation on next steps — and the honest conversation about whether the Full Sprint is the right move.",
+                title: "Extraction Readiness Assessment",
+                body: "A clear recommendation on next steps — and the honest conversation about whether The Extraction is the right move.",
               },
             ].map(({ title, body }) => (
               <div
@@ -145,13 +145,13 @@ export default function AuditPageClient() {
       <section className="bg-parchment py-20 md:py-24 px-6">
         <div className="max-w-[560px] mx-auto">
           <h2 className="font-caveat text-[44px] text-ink leading-tight text-center">
-            Ready to see what&rsquo;s actually there?
+            Request the Audit.
           </h2>
           <p className="font-epilogue font-semibold text-[22px] text-ink mt-4 text-center">
             ₹35,000 — 48-hour turnaround
           </p>
           <p className="font-epilogue font-light text-[14px] text-stone mt-2 text-center">
-            Investment for the Full Sprint is discussed at the debrief — after
+            Investment for The Extraction is discussed at the debrief — after
             you&rsquo;ve seen the diagnosis.
           </p>
           <AuditForm onSubmitted={() => setSubmitted(true)} />

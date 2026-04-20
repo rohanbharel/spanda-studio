@@ -4,13 +4,13 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer
-      className="bg-ink px-6 pt-8 pb-4"
+      className="bg-ink px-6 pt-6 pb-3"
       style={{ borderTop: "1px solid rgba(216,209,196,0.2)" }}
     >
       <div className="max-w-[1100px] mx-auto">
 
         {/* Two columns — desktop: items-end justify-between | mobile: stacked centred */}
-        <div className="flex flex-col items-center text-center md:flex-row md:items-end md:justify-between md:text-left gap-10">
+        <div className="flex flex-col items-center text-center md:flex-row md:items-start md:justify-between md:text-left gap-10">
 
           {/* Left — SPANDA */}
           <div className="flex flex-col items-center md:items-start">
@@ -28,7 +28,7 @@ export default function Footer() {
               spanda.studio
             </p>
             <p className="font-epilogue font-light text-[12px] text-stone mt-1">
-              Delhi, India.
+              New Delhi, India.
             </p>
             <Link
               href="/about"
@@ -54,23 +54,26 @@ export default function Footer() {
               href="https://pravah.agency"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-epilogue font-light text-[13px] text-stone hover:text-parchment transition-colors mt-1 min-h-[44px] flex items-center"
+              className="font-epilogue font-light text-[13px] text-stone hover:text-parchment transition-colors mt-1"
             >
               pravah.agency →
             </Link>
+            <p className="font-epilogue font-light text-[12px] text-stone mt-1">
+              New Delhi, India.
+            </p>
           </div>
 
         </div>
 
         {/* Bottom line */}
-        <div className="mt-7 pt-4 pb-4 text-center">
+        <div className="mt-5 pt-3 pb-3 text-center">
           <p className="font-epilogue font-light text-[12px] text-stone">
             © 2026 SPANDA. All rights reserved.
           </p>
-          <p className="font-epilogue font-light text-[12px] text-stone mt-1">
+          <p className="font-epilogue font-light text-[12px] text-stone" style={{ marginTop: "4px" }}>
             <Link
               href="mailto:hello@spanda.studio"
-              className="hover:text-parchment transition-colors min-h-[44px] flex items-center justify-center"
+              className="hover:text-parchment transition-colors"
             >
               hello@spanda.studio
             </Link>

@@ -99,11 +99,6 @@ export default function ScoreForm() {
     }
   };
 
-  const scrollToForm = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    document.getElementById("score-form")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   const inputClass = "w-full font-epilogue font-light text-[15px] text-ink bg-transparent border border-ink px-4 py-3 focus:outline-none focus:border-saffron transition-colors";
   const labelClass = "font-epilogue font-light text-[13px] text-ink mb-1 block";
   const textareaClass = `${inputClass} resize-none`;
@@ -114,11 +109,11 @@ export default function ScoreForm() {
       <section className="bg-ink pt-32 pb-20 px-6">
         <div className="max-w-[800px] mx-auto">
 
-          <h1 className="font-caveat text-[44px] md:text-[48px] text-parchment leading-tight">
+          <h1 className="font-caveat text-[44px] md:text-[48px] text-parchment leading-tight text-center">
             What does a found brand look like?
           </h1>
 
-          <p className="font-epilogue font-light text-[16px] text-stone mt-4 max-w-[560px] leading-relaxed">
+          <p className="font-epilogue font-light text-[16px] text-stone mt-4 max-w-[640px] mx-auto text-center leading-relaxed">
             Most brands can feel the gap. The distance between what they know
             about themselves and what the market actually encounters.
             These are the markers.
@@ -170,16 +165,6 @@ export default function ScoreForm() {
             <br />
             The analysis will tell you — specifically, across the dimension that matters most to you.
           </p>
-          <div className="mt-8 text-center">
-            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a
-              href="#score-form"
-              onClick={scrollToForm}
-              className="font-epilogue font-semibold text-[16px] text-ink bg-saffron px-8 py-4 inline-block hover:opacity-90 transition-opacity"
-            >
-              Run the analysis →
-            </a>
-          </div>
 
         </div>
       </section>
@@ -234,10 +219,9 @@ export default function ScoreForm() {
                 <label className={labelClass}>Name three competitors you actually think about.</label>
                 <textarea required rows={2} value={brand.competitors} onChange={setBrandField("competitors")} className={textareaClass} />
               </div>
-              <div className="pt-8">
+              <div>
                 <label className="font-epilogue font-medium text-[15px] text-ink mb-2 block">
-                  The one thing you believe only your brand can honestly claim —
-                  even if you&rsquo;ve never said it publicly.
+                  The one thing you believe only your brand can honestly claim.
                 </label>
                 <textarea required rows={3} value={brand.uniqueClaim} onChange={setBrandField("uniqueClaim")} className={textareaClass} />
                 <p className="font-epilogue font-light text-[13px] text-stone-accessible mt-2">
@@ -287,10 +271,8 @@ export default function ScoreForm() {
                 <div>
                   <label className={labelClass}>Email</label>
                   <input required type="email" value={contact.email} onChange={setContactField("email")} className={inputClass} />
-                  <p className="font-epilogue font-light text-[13px] text-stone-accessible mt-2">
-                    Your analysis arrives here.
-                    Reviewed before it reaches you.
-                    No marketing emails. Ever.
+                  <p className="font-epilogue font-light text-[12px] text-stone-accessible mt-2 whitespace-nowrap">
+                    Your analysis arrives here. No marketing emails. Ever.
                   </p>
                 </div>
                 <div>
@@ -315,7 +297,7 @@ export default function ScoreForm() {
               disabled={submitting}
               className="mt-8 w-full font-epilogue font-semibold text-[16px] text-ink bg-saffron px-6 py-4 hover:opacity-90 transition-opacity disabled:opacity-50"
             >
-              {submitting ? "Sending…" : "Request the Analysis →"}
+              {submitting ? "Sending…" : "Score your brand →"}
             </button>
 
           </div>

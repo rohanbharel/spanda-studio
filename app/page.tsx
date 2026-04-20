@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: "SPANDA. — Brand Strategy & Identity",
   description:
     "SPANDA. is a brand strategy and identity consultancy for founders who want to find what their brand already is. Delhi, India.",
+  keywords: [
+    "brand strategy consultant India",
+    "brand identity agency Delhi",
+    "brand audit founders India",
+    "brand strategy Delhi",
+    "brand identity consultant India",
+  ],
   alternates: { canonical: "https://spanda.studio" },
   openGraph: {
     title: "SPANDA. — Brand Strategy & Identity",
@@ -156,7 +163,7 @@ export default function Home() {
 
           {/* Subline */}
           <p className="font-epilogue font-light text-[18px] text-stone mt-3">
-            3 phases. 9 layers. 9 proprietary tools. Every output passes The Only You Test.
+            Three phases. Nine proprietary tools. Every output passes The Only You Test.
           </p>
 
           {/* Phase cards */}
@@ -282,17 +289,14 @@ export default function Home() {
           <div className="bg-saffron rounded-sm px-10 py-8 mt-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
               <p className="font-epilogue font-light text-[17px] text-ink">
-                Most brands score between 28 and 45 before working with SPANDA.
-              </p>
-              <p className="font-epilogue font-semibold text-[20px] text-ink mt-1">
-                The average after: 88/100.
+                Most brands discover their biggest gap isn&rsquo;t where they expected.
               </p>
             </div>
             <Link
-              href="/audit"
+              href="/score"
               className="font-epilogue font-medium text-[15px] text-parchment bg-ink px-7 py-[14px] rounded-sm shrink-0 hover:opacity-90 transition-opacity"
             >
-              Score your brand free →
+              Score your brand →
             </Link>
           </div>
 
@@ -300,167 +304,116 @@ export default function Home() {
       </section>
 
       {/* Moment 5 — Entry Points */}
-      <section className="bg-parchment py-20 md:py-32 px-6">
+      {/* Moment 5 — Where to Begin */}
+      <section className="bg-parchment py-16 md:py-24 px-6">
         <div className="max-w-[900px] mx-auto">
 
           {/* Label */}
-          <p className="font-epilogue text-[11px] uppercase tracking-widest text-stone">
+          <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
             Where to Begin
           </p>
 
           {/* Headline */}
-          <h2 className="font-epilogue font-semibold text-[36px] md:text-[52px] text-ink leading-tight mt-3">
-            Two ways in.
+          <h2 className="font-caveat text-[42px] md:text-[64px] text-ink leading-tight mt-3">
+            Most founders start with the Audit.
           </h2>
 
-          {/* Subline */}
-          <p className="font-epilogue font-light text-[18px] text-stone mt-3">
-            One is a diagnosis. One is a transformation. Most clients start with the first.
+          {/* Sub */}
+          <p className="font-epilogue font-light text-[18px] text-stone mt-4 leading-relaxed">
+            A complete brand diagnosis before committing to anything bigger.
+            See exactly what your brand is doing — and what to fix first.
           </p>
 
-          {/* Three ways to begin */}
-          <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone mt-12">
-            Three Ways to Begin
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-
-            {/* Card 1 — Brand Dimension Report */}
-            <div className="bg-linen border border-dust rounded-sm p-7 flex flex-col">
-              <h3 className="font-caveat text-[28px] text-ink leading-tight">
-                Brand Dimension Report
+          {/* Primary card — Ink background */}
+          <div className="bg-ink rounded-sm mt-10 p-6 md:p-10 flex flex-col md:flex-row gap-8 md:items-center">
+            {/* Left */}
+            <div className="flex-1">
+              <h3 className="font-caveat text-[36px] text-parchment leading-tight">
+                Brand Strength Audit
               </h3>
-              <p className="font-epilogue font-light text-[14px] text-stone mt-2 leading-relaxed">
-                Free. One dimension. Delivered next business day.
+              <p className="font-epilogue font-light text-[15px] text-stone mt-2">
+                ₹35,000 · 48 hours · Debrief included
               </p>
-              <div className="grow" />
+              <ul className="mt-4 space-y-2">
+                {[
+                  "Complete Brand Strength Score — 12 dimensions",
+                  "Your single biggest brand gap identified",
+                  "A clear brief for what The Extraction will fix",
+                  "Delivered in 48 hours. In person or video debrief included.",
+                ].map((item) => (
+                  <li key={item} className="font-epilogue font-light text-[15px] text-stone flex gap-2">
+                    <span className="shrink-0">—</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Right */}
+            <div className="flex flex-col items-center shrink-0">
+              <Link
+                href="/audit"
+                className="font-epilogue font-semibold text-[16px] text-ink bg-saffron rounded-sm px-8 py-4 hover:opacity-90 transition-opacity whitespace-nowrap"
+              >
+                Begin the Audit →
+              </Link>
+              <p className="font-epilogue font-light text-[13px] text-stone mt-3 text-center">
+                The Audit stands alone.
+                <br />No further commitment required.
+              </p>
+            </div>
+          </div>
+
+          {/* Two secondary cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+
+            {/* Left card */}
+            <div className="bg-linen border border-dust rounded-sm p-6">
+              <p className="font-epilogue font-semibold text-[15px] text-ink">
+                Not ready to commit?
+              </p>
+              <p className="font-epilogue font-light text-[15px] text-stone mt-2 leading-relaxed">
+                Score one dimension of your brand free.
+                Delivered next business day.
+              </p>
               <Link
                 href="/score"
                 className="font-epilogue font-medium text-[15px] text-saffron mt-4 block hover:opacity-80 transition-opacity"
               >
-                Request your free report →
+                Score your brand →
               </Link>
             </div>
 
-            {/* Card 2 — Brand Strength Audit */}
-            <div className="bg-linen border border-dust rounded-sm p-7 flex flex-col">
-              <h3 className="font-caveat text-[28px] text-ink leading-tight">
-                Brand Strength Audit
-              </h3>
+            {/* Right card */}
+            <div className="bg-linen border border-dust rounded-sm p-6">
+              <p className="font-epilogue font-semibold text-[15px] text-ink">
+                The Extraction
+              </p>
               <p className="font-epilogue font-light text-[14px] text-stone mt-2 leading-relaxed">
-                ₹35,000. 12 dimensions. 48 hours. Debrief included.
+                The complete Extraction Framework.
+                One full day — founder session, leadership alignment, combined vision session.
               </p>
-              <div className="grow" />
+              <p className="font-epilogue font-light text-[14px] text-stone mt-3 leading-relaxed">
+                Your Brand OS — the complete operating system for every brand decision.
+                Visual and verbal identity system.
+                90-day activation roadmap.
+                PRAVAH-ready for ongoing campaigns.
+              </p>
+              <p className="font-epilogue font-light text-[13px] text-stone mt-4">
+                Investment discussed after the Audit.
+              </p>
               <Link
                 href="/audit"
-                className="font-epilogue font-medium text-[15px] text-saffron mt-4 block hover:opacity-80 transition-opacity"
-              >
-                Request the Audit →
-              </Link>
-            </div>
-
-            {/* Card 3 — Brand Sprint */}
-            <div className="bg-linen border border-dust rounded-sm p-7 flex flex-col">
-              <h3 className="font-caveat text-[28px] text-ink leading-tight">
-                Brand Sprint
-              </h3>
-              <p className="font-epilogue font-light text-[14px] text-stone mt-2 leading-relaxed">
-                The full extraction. One day. Brand OS delivered.
-              </p>
-              <div className="grow" />
-              <Link
-                href="/audit?offering=sprint"
-                className="font-epilogue font-medium text-[15px] text-ink mt-4 block hover:opacity-80 transition-opacity"
-              >
-                Request a conversation →
-              </Link>
-            </div>
-
-          </div>
-
-          {/* Offer cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-
-            {/* Card 1 — Brand Audit */}
-            <div className="bg-linen border border-dust rounded-sm p-9 flex flex-col">
-              <p className="font-epilogue text-[11px] uppercase tracking-widest text-saffron">
-                Start Here
-              </p>
-              <h3 className="font-epilogue font-semibold text-[28px] text-ink mt-2">
-                Brand Strength Audit
-              </h3>
-              <div className="flex items-baseline gap-2 mt-4">
-                <span className="font-epilogue font-light text-[32px] text-ink">₹35,000</span>
-                <span className="font-epilogue font-light text-[14px] text-stone">/ one engagement</span>
-              </div>
-              <hr className="border-0 border-t border-dust mt-4" />
-              <ul className="mt-4 space-y-3">
-                {[
-                  "Complete Brand Strength Score across 12 dimensions",
-                  "Identification of your single biggest brand gap",
-                  "A clear brief for what the Sprint will fix",
-                  "Delivered in 48 hours",
-                ].map((item) => (
-                  <li key={item} className="font-epilogue font-light text-[15px] text-ink">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="grow" />
-              <Link
-                href="/audit"
-                className="font-epilogue font-medium text-[15px] text-parchment bg-ink rounded-sm px-4 py-[14px] mt-8 text-center hover:opacity-90 transition-opacity"
-              >
-                Begin the Audit →
-              </Link>
-              <p className="font-epilogue font-light text-[12px] text-stone text-center mt-2">
-                No commitment to the Sprint required
-              </p>
-            </div>
-
-            {/* Card 2 — The Full Sprint */}
-            <div className="bg-ink rounded-sm p-9 flex flex-col">
-              <p className="font-epilogue text-[11px] uppercase tracking-widest text-stone">
-                The Complete Engagement
-              </p>
-              <h3 className="font-epilogue font-semibold text-[28px] text-parchment mt-2">
-                The Extraction Sprint
-              </h3>
-              <p className="font-epilogue font-light text-[18px] text-stone mt-4">
-                Investment discussed after Audit
-              </p>
-              <hr className="border-0 border-t mt-4" style={{ borderColor: "rgba(140,130,119,0.2)" }} />
-              <ul className="mt-4 space-y-3">
-                {[
-                  "The complete Extraction Framework — all 9 layers",
-                  "The Brand Retreat — multi-stakeholder, residential",
-                  "Your complete Brand OS — living, not a PDF",
-                  "Visual and verbal identity system",
-                  "The 90-Day Signal Map for activation",
-                  "PRAVAH-ready Brand OS for ongoing campaign generation",
-                  "AI-powered Brand OS — activatable through PRAVAH for ongoing campaigns",
-                ].map((item) => (
-                  <li key={item} className="font-epilogue font-light text-[15px] text-parchment">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="grow" />
-              <Link
-                href="/audit"
-                className="font-epilogue font-medium text-[15px] text-ink bg-saffron rounded-sm px-4 py-[14px] mt-8 text-center hover:opacity-90 transition-opacity"
+                className="font-epilogue font-medium text-[15px] text-stone mt-2 block hover:opacity-60 transition-opacity"
               >
                 Start with the Audit →
               </Link>
-              <p className="font-epilogue font-light text-[12px] text-stone text-center mt-2">
-                Most Sprint clients begin with the Audit
-              </p>
             </div>
 
           </div>
 
           {/* Closing line */}
-          <p className="font-epilogue font-light text-[17px] text-stone text-center mt-12">
-            Start with the Audit. ₹35,000. 48 hours. You&rsquo;ll know exactly what the Sprint will fix.
+          <p className="font-epilogue font-light italic text-[15px] text-stone text-center mt-8">
+            Start with the Audit. ₹35,000. 48 hours. You&rsquo;ll know exactly what The Extraction will fix.
           </p>
 
         </div>
@@ -471,7 +424,7 @@ export default function Home() {
         <div className="max-w-[800px] mx-auto">
 
           {/* Headline */}
-          <h2 className="font-caveat text-[44px] md:text-[68px] text-parchment leading-tight">
+          <h2 className="font-caveat text-[42px] md:text-[64px] text-parchment leading-tight">
             Every brand is already there.
           </h2>
 
@@ -481,7 +434,7 @@ export default function Home() {
               Spanda.
             </p>
             <p className="font-epilogue font-light text-[17px] md:text-[20px] text-stone leading-relaxed">
-              We believe every founder already knows what their brand is. It lives in why they started, what makes them angry about their category, how they describe their work when no one is watching. It is not missing. It has not been built yet. It exists — compressed, unexpressed, waiting.
+              We believe every founder already knows what their brand is. It lives in why they started, what makes them angry about their category, how they describe their work when no one is watching. It is not missing. It has not been expressed yet. It exists — compressed, unexpressed, waiting.
             </p>
             <p className="font-epilogue font-light text-[17px] md:text-[20px] text-stone leading-relaxed">
               That is what we extract.
