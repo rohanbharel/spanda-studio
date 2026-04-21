@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logos/OG Spanda.png",
+        url: "/logos/OG%20Spanda.png",
         width: 1200,
         height: 630,
         alt: "SPANDA. — Every brand is already there. We draw it out.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/logos/OG Spanda.png"],
+    images: ["/logos/OG%20Spanda.png"],
   },
   verification: {
     google: "waXurWBUoTfOLwufytj7sUkCNK6rAYHv59PSE2PKbIs",

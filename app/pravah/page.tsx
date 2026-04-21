@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logos/OG Pravah.png",
+        url: "/logos/OG%20Pravah.png",
         width: 1200,
         height: 630,
         alt: "PRAVAH — The brand, moving in the world, as itself.",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/logos/OG Pravah.png"],
+    images: ["/logos/OG%20Pravah.png"],
   },
 };
 
