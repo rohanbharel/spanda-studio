@@ -209,7 +209,7 @@ export default function ScoreForm() {
               </div>
               <div>
                 <label className={labelClass}>Website URL</label>
-                <input required type="url" value={brand.website} onChange={setBrandField("website")} className={inputClass} placeholder="https://" />
+                <input required type="text" value={brand.website} onChange={setBrandField("website")} className={inputClass} placeholder="yourwebsite.com" />
               </div>
               <div>
                 <label className={labelClass}>What do you do, and for whom?</label>

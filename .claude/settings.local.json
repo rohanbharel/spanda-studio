@@ -20,7 +20,8 @@
       "Bash(git push:*)",
       "Bash(python3 -c ':*)",
       "Bash(sips -g pixelWidth -g pixelHeight /Users/rohanbharel/ClaudeProjects/TheAgency/public/logos/*.png)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(ls /Users/rohanbharel/ClaudeProjects/TheAgency/public/*.png)"
     ]
   }
 }
