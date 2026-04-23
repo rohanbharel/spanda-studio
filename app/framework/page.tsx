@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import FrameworkDiagram from "../components/sections/FrameworkDiagram";
 
 export const metadata: Metadata = {
   title: "The Extraction Framework™",
@@ -82,6 +83,8 @@ export default function FrameworkPage() {
           </p>
         </div>
       </section>
+
+      <FrameworkDiagram />
 
       {/* Three phases */}
       <section className="bg-parchment pb-20 md:pb-32 px-6">
