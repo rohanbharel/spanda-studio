@@ -6,14 +6,21 @@ const pillars = [
   { name: "Consumer Truth",  desc: "What the world has already decided." },
 ];
 
-function Gate({ label, saffron = false }: { label: string; saffron?: boolean }) {
+function Gate({ label, saffron = false, subtext }: { label: string; saffron?: boolean; subtext?: string }) {
   return (
-    <div className="flex items-center gap-4 border-t border-b border-dust py-4 bg-parchment">
-      <div className="flex-1 h-px bg-dust" />
-      <p className={`font-epilogue font-semibold text-[10px] uppercase tracking-widest whitespace-nowrap ${saffron ? "text-saffron" : "text-ink"}`}>
-        {label}
-      </p>
-      <div className="flex-1 h-px bg-dust" />
+    <div className="border-t border-b border-dust py-4 bg-parchment">
+      <div className="flex items-center gap-4">
+        <div className="flex-1 h-px bg-dust" />
+        <p className={`font-epilogue font-semibold text-[10px] uppercase tracking-widest whitespace-nowrap ${saffron ? "text-saffron" : "text-ink"}`}>
+          {label}
+        </p>
+        <div className="flex-1 h-px bg-dust" />
+      </div>
+      {subtext && (
+        <p className="font-epilogue font-light italic text-[12px] text-stone text-center mt-1">
+          {subtext}
+        </p>
+      )}
     </div>
   );
 }
@@ -51,7 +58,18 @@ const phases = [
   },
 ];
 
-const interPhaseGates = ["INTERSECTION TEST", "ONLY YOU TEST"] as const;
+const interPhaseGates = [
+  {
+    label: "INTERSECTION TEST",
+    saffron: false,
+    subtext: "The conviction must be genuine. The differentiation must be singular.",
+  },
+  {
+    label: "ONLY YOU TEST",
+    saffron: true,
+    subtext: "If another brand could say it — we remove it.",
+  },
+] as const;
 
 export default function FrameworkDiagram() {
   return (
@@ -114,8 +132,9 @@ export default function FrameworkDiagram() {
             </div>
             {i < phases.length - 1 && (
               <Gate
-                label={interPhaseGates[i]}
-                saffron={interPhaseGates[i] === "ONLY YOU TEST"}
+                label={interPhaseGates[i].label}
+                saffron={interPhaseGates[i].saffron}
+                subtext={interPhaseGates[i].subtext}
               />
             )}
           </div>
