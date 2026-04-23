@@ -23,6 +23,14 @@ export const metadata: Metadata = {
       "PRAVAH was born from the same framework as SPANDA. The story of a creative entity built on the Brand OS — and the philosophy encoded in its mark.",
     url: "https://spanda.studio/pravah-story",
     type: "website",
+    images: [
+      {
+        url: "/logos/OG%20Pravah.png",
+        width: 2400,
+        height: 1260,
+        alt: "PRAVAH — The brand, moving in the world, as itself.",
+      },
+    ],
   },
 };
 

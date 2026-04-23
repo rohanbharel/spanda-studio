@@ -14,6 +14,14 @@ export const metadata: Metadata = {
       "Choose one dimension. Tell us about your brand. Receive a strategic analysis from SPANDA. — next business day, reviewed before it reaches you.",
     url: "https://spanda.studio/score",
     type: "website",
+    images: [
+      {
+        url: "/logos/OG%20Spanda.png",
+        width: 2400,
+        height: 1260,
+        alt: "SPANDA. — Brand Strategy & Identity",
+      },
+    ],
   },
 };
 

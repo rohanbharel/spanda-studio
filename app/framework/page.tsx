@@ -14,6 +14,14 @@ export const metadata: Metadata = {
       "The Extraction Framework™ — a proprietary brand methodology built on three phases: Excavate, Distil, Express. SPANDA. Brand Strategy & Identity.",
     url: "https://spanda.studio/framework",
     type: "website",
+    images: [
+      {
+        url: "/logos/OG%20Spanda.png",
+        width: 2400,
+        height: 1260,
+        alt: "SPANDA. — Brand Strategy & Identity",
+      },
+    ],
   },
 };
 

@@ -15,6 +15,14 @@ export const metadata: Metadata = {
       "SPANDA. extracts the brand that already exists inside every founder. Brand strategy and identity consultancy. Delhi, India.",
     url: "https://spanda.studio/about",
     type: "website",
+    images: [
+      {
+        url: "/logos/OG%20Spanda.png",
+        width: 2400,
+        height: 1260,
+        alt: "SPANDA. — Brand Strategy & Identity",
+      },
+    ],
   },
 };
 
