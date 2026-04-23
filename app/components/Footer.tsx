@@ -71,6 +71,9 @@ export default function Footer() {
             © 2026 SPANDA. All rights reserved.
           </p>
           <p className="font-epilogue font-light text-[12px] text-stone" style={{ marginTop: "4px" }}>
+            The Extraction Framework™ is a proprietary methodology of SPANDA.
+          </p>
+          <p className="font-epilogue font-light text-[12px] text-stone" style={{ marginTop: "4px" }}>
             <Link
               href="mailto:hello@spanda.studio"
               className="hover:text-parchment transition-colors"

@@ -7,11 +7,20 @@
 
 ---
 
+## PROJECT DOCUMENTS — REFERENCE FILES
+
+SPANDA-STORY.md        — locked Our Story copy
+PRAVAH-STORY.md        — locked PRAVAH story copy  
+EXTRACTION-FRAMEWORK.md — full framework, 12 layers, question bank
+SPANDA-DECISIONS.md    — all locked decisions, master log
+
+---
+
 ## WHO WE ARE
 
 **SPANDA.** — Brand Strategy & Identity Consultancy
 **PRAVAH** — AI-Powered Brand Activation Agency
-**Holding company** — BINDU / [pending numerology confirmation]
+**Holding company** — Pending numerology confirmation via Brahma Jyoti. Candidates: BINDU, ALEPH, CERNO, PRIMA, LOCUS.
 
 We are building two companies simultaneously. They share a design system and a philosophical origin but have distinct identities, personalities, and websites.
 
@@ -20,18 +29,38 @@ Brands are not built. They are extracted from the founder's deepest convictions.
 
 ---
 
-## WHAT WE ARE BUILDING — IN THIS PROJECT
+## CURRENT BUILD STATE — AS OF APRIL 21, 2026
 
-### Build 1 — spanda.studio (website)
-The primary marketing and conversion website for SPANDA.
-Technology: **Next.js + Tailwind CSS + Vercel deployment**
+### Build 1 — spanda.studio — LIVE
+All pages live and confirmed functional. Deployed on Vercel. Auto-deploys on push to main.
 
-### Build 2 — Brand OS Engine (future)
-The AI-powered campaign engine that loads each client's Brand OS as a system prompt and generates brand-consistent campaigns for PRAVAH to authenticate.
-Technology: **Next.js + Claude API + Supabase**
+### Build 2 — Brand OS Engine
+Build before first client so demo is live. First client activates it live.
+Technology: Next.js + Claude API (claude-sonnet-4-5) + Supabase
 
-### Build 3 — pravah.agency (website — after Build 1 is live)
-Technology: Same stack as spanda.studio
+### Build 3 — pravah.agency — LIVE
+Separate Vercel project. Canonical set to https://pravah.agency. Full brand build after first client.
+
+---
+
+## PAGES — LIVE STATE
+
+```
+spanda.studio/              — Live. Confirmed.
+spanda.studio/about         — Live. Confirmed.
+spanda.studio/framework     — Live. Confirmed.
+spanda.studio/audit         — Live. Form working. Emails received.
+spanda.studio/score         — Live. Form working. Emails received.
+spanda.studio/pravah-story  — Live. Indexed in Search Console.
+spanda.studio/start         — Redirects to homepage.
+pravah.agency               — Live. Separate Vercel project.
+pravah.agency/pravah        — Live. Five USPs. Mailto linked.
+```
+
+### Pages Still to Build
+```
+/engine    — Brand OS Engine (Build 2, protected route)
+```
 
 ---
 
@@ -39,33 +68,33 @@ Technology: Same stack as spanda.studio
 
 ### Colours
 ```
-Ink:       #1C1814   /* primary — all text, backgrounds (dark) */
-Parchment: #F5F0E8   /* primary — all backgrounds (light) */
-Saffron:   #C97820   /* accent — ONE use per design, never more */
-Deep Navy: #0A2540   /* PRAVAH exclusive — never use on SPANDA */
-Stone:     #8C8277   /* secondary text, captions */
-Stone-accessible: #6B6259   /* text 13px and below on Parchment/Linen — WCAG contrast compliant */
-Dust:      #D8D1C4   /* rules, dividers */
-Linen:     #EDE8DF   /* card/section backgrounds */
+Ink:              #1C1814   /* primary — all text, dark backgrounds */
+Parchment:        #F5F0E8   /* primary — all light backgrounds */
+Saffron:          #C97820   /* accent — ONE use per design section, never more */
+Deep Navy:        #0A2540   /* PRAVAH exclusive — never use on SPANDA */
+Stone:            #8C8277   /* secondary text, captions */
+Stone-accessible: #6B6259   /* text 13px and below on Parchment/Linen — WCAG compliant */
+Dust:             #D8D1C4   /* rules, dividers */
+Linen:            #EDE8DF   /* card and section backgrounds */
 ```
 
-**Never use:** pure black #000000, pure white #FFFFFF, any blue on SPANDA, gradients, multiple accents on one screen.
+**Never use:** pure black #000000, pure white #FFFFFF, any blue on SPANDA, gradients, multiple Saffron elements on one screen.
 
 ### Typography
 ```
-Syne ExtraBold    — SPANDA. wordmark only. Never headlines or body.
-Syne SemiBold     — PRAVAH wordmark only. Never headlines or body.
-Caveat            — All handwritten headlines, pull quotes, conviction statements (Google Font)
-Epilogue          — All body copy, UI labels, navigation, captions (Google Font)
-Fraunces          — Philosophical long-form sections only (Google Font)
+Syne ExtraBold  — SPANDA. wordmark only. Never headlines or body.
+Syne SemiBold   — PRAVAH wordmark only. Never headlines or body.
+Caveat          — All handwritten headlines, pull quotes, conviction statements.
+Epilogue        — All body copy, UI labels, navigation, captions.
+Fraunces        — Philosophical long-form sections only.
 ```
 
-**Import in CSS:**
-```css
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Epilogue:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,400&family=Syne:wght@600;800&display=swap');
-```
+**Fonts are self-hosted. Do NOT import from Google Fonts CDN.**
+Font files live at /public/fonts/
+Preload declarations exist in layout.tsx for caveat-latin.woff2 and epilogue-latin.woff2.
+font-display: swap is applied to Caveat and Epilogue.
 
-**Font variables:**
+**Font variables in globals.css:**
 ```css
 --font-syne: 'Syne', sans-serif;
 --font-caveat: 'Caveat', cursive;
@@ -74,30 +103,44 @@ Fraunces          — Philosophical long-form sections only (Google Font)
 ```
 
 ### Typography rules
-- Syne only for wordmarks (set in React/SVG components, not CSS text)
+- Syne only for wordmarks — set in React/SVG components, not CSS text
 - Caveat for hero headlines, pull quotes, manifesto lines, section openers
 - Epilogue for everything operational: nav, body, CTAs, labels, data
-- Fraunces for the philosophy/about sections only
+- Fraunces for philosophy/about sections only
 - Headlines carry weight. Body is light (300) or regular (400). Bold only for emphasis.
 
-### Logo files (in /public/logos/)
+### Logo and Asset Files — all in /public/logos/
 ```
-spanda-light.png   — SPANDA. wordmark for light/parchment backgrounds
-spanda-dark.png    — SPANDA. wordmark for dark/ink backgrounds
-pravah-light.png   — PRAVAH wordmark for light/parchment backgrounds
-pravah-dark.png    — PRAVAH wordmark for dark/ink backgrounds
+spanda-light.png         — SPANDA. wordmark, Ink colour → use on Parchment/light backgrounds
+spanda-dark.png          — SPANDA. wordmark, white → use on Ink/dark backgrounds
+pravah-light.png         — PRAVAH wordmark, Navy colour → use on Parchment/light backgrounds
+pravah-dark.png          — PRAVAH wordmark, white → use on Ink/dark backgrounds
+Spanda Favicon ink.png   — Saffron Bindu on Ink bg, 16×16px — active favicon for both sites
+Spanda Favicon parch.png — Saffron Bindu on Parchment bg — reserved
+OG Spanda.png            — 1200×630px OG image, 2x for retina
+OG Pravah.png            — 1200×630px OG image, 2x for retina
 ```
-**Never resize logos below 2cm / 56px width.**
-**Never add effects, shadows, or outlines to logos.**
-**Never change the Saffron period colour.**
+
+**Logo rules:**
+- Never resize below 2cm / 56px width
+- Never add effects, shadows, or outlines
+- Never change the Saffron period colour
+- Navbar (Ink bg) and Footer (Ink bg) → use dark versions
+- Page body on Parchment → use light versions
 
 ---
 
-## SPANDA. WEBSITE — STRUCTURE
+## SPANDA. WEBSITE — SCROLL STRUCTURE
 
-### Domain
-Primary: **spanda.studio**
-Card redirect: spanda.ink → spanda.studio/start
+### Domain Architecture
+```
+spanda.studio              — primary, all content, all SEO
+spanda.ink                 — visiting card redirect → spanda.studio/start
+spanda.agency              — silent redirect, never displayed
+spanda.consulting          — silent redirect, never displayed
+spanda.works               — silent redirect, never displayed
+pravah.agency              — PRAVAH primary, separate Vercel project
+```
 
 ### The 6 Scroll Moments (in order)
 Every scroll moment has a specific emotional job. Do not deviate.
@@ -117,39 +160,95 @@ Tone: Direct. No softening. Say the uncomfortable truth first.
 
 **Moment 3 — UNDERSTAND (The Framework)**
 Headline in Epilogue SemiBold: *"The Extraction Framework™"*
-Show: 3 phases (Excavate / Distill / Express), 9 layers, 9 tools
+Subheadline: *"Three phases. Nine proprietary tools. Every output passes The Only You Test."*
+Show: 3 phases (Excavate / Distil / Express), 12 layers, 9 tools
 The Only You Test bar at the bottom in Saffron
 Background: Parchment
 
 **Moment 4 — BELIEVE (Proof)**
-Brand Strength Scorecard — the before/after mechanism
-12 dimensions. 0–100 score. Show what improvement looks like.
+12-Dimension Brand Strength Scorecard
+Show what each dimension means. Show what improvement looks like.
 Background: Ink
 Tone: Evidence-based. Data-forward.
+Do NOT use unverified statistics. Current approved line:
+*"Most brands discover their biggest gap isn't where they expected it."*
 
-**Moment 5 — ACT (Entry points)**
-Two offers:
-1. Brand Strength Audit — ₹25,000 — 48 hours — clear deliverable
-2. The Full Sprint — ₹1.5L–₹5L — 14+ days — complete Brand OS
-Closing line: *"Start with the Audit. ₹25,000. 48 hours. You'll know exactly what the Sprint will fix."*
-Background: Parchment / Saffron CTA block
+**Moment 5 — ACT (Where to Begin)**
+Background: Parchment
+Label: "WHERE TO BEGIN" — Epilogue SemiBold 11px Stone uppercase
+Headline in Caveat 52px: *"Most founders start with the Audit."*
+Sub in Epilogue Light 18px Stone: Diagnosis before commitment.
+
+PRIMARY CARD — Ink background:
+- Title in Caveat 36px Parchment: "Brand Strength Audit"
+- Price/time: "₹35,000 · 48 hours · Debrief included"
+- Four bullet points: Complete Brand Strength Score (12 dimensions), biggest gap identified, clear brief for The Extraction, delivered in 48 hours with debrief
+- CTA button: Saffron bg, Ink text: "Begin the Audit →" → /audit
+- Below button: "No commitment to The Extraction required."
+
+TWO SECONDARY CARDS — Linen background, side by side desktop, stacked mobile:
+Left: "Not ready to commit?" → Score one dimension free → /score
+Right: "The Extraction" → Complete framework, full day, Brand OS delivered → Investment discussed after Audit → /audit
+
+Closing italic line: *"Start with the Audit. ₹35,000. 48 hours. You'll know exactly what The Extraction will fix."*
 
 **Moment 6 — CONNECT (The Philosophy)**
 The Spanda concept — for the intellectually curious
 Manifesto excerpt in Caveat
 Background: Ink
 No CTA. Just conviction.
+Key line: *"It has not been expressed yet."* — not "built yet"
 
 ### Navigation
-Minimal. Logo left. Three links right: Work / Framework / Start
+Logo left. Three links right: Our Story / Framework / Start
 No hamburger on desktop. Clean single line.
 Mobile: Logo + single CTA button.
+Background: Ink. Links in Epilogue Light Stone.
 
 ### Footer
-SPANDA. wordmark. spanda.studio. spanda.ink.
-Copyright line. Confidential note.
-Stone colour on Ink background.
-Footer hierarchy (SPANDA column): Logo → Brand Strategy & Identity (13px Stone) → spanda.studio (13px Stone) → Delhi, India. (12px Stone, mt-1).
+Two-column logo lockup: SPANDA. at 256px width, PRAVAH at 189px width.
+Vertical divider between logos. Cross-brand relationship implied, not explained.
+
+SPANDA column hierarchy:
+Logo → "Brand Strategy & Identity" (13px Stone) → spanda.studio (13px Stone) → Delhi, India. (12px Stone)
+
+Copyright line centred below both columns. Stone on Ink.
+Footer is compact and tight — not a design feature, a quiet close.
+Reduced padding: 20% less top, bottom, and between logo columns and copyright.
+
+---
+
+## PRICING — LOCKED. DO NOT DEVIATE.
+
+```
+Brand Dimension Report    — Free. One dimension. AI-assisted. Next business day.
+Brand Strength Audit      — ₹35,000. 48 hours. 12-dimension scored report. Debrief meeting.
+The Extraction Standard   — ₹8,00,000. Client location. Single full day. Delhi-NCR.
+The Extraction Full       — ₹15,00,000 + venue/F&B at actuals. SPANDA-organised offsite.
+The Extraction Intl.      — ₹25,00,000 + all travel at actuals. Inbound only. Not listed publicly.
+```
+
+**Extraction pricing never shown on website.** Site says: "Investment discussed after Audit."
+Audit debrief = pitch meeting for The Extraction. Non-negotiable inclusion.
+
+---
+
+## TERMINOLOGY — LOCKED
+
+```
+The Extraction Framework™  — the proprietary methodology. Always with ™.
+The Extraction             — client-facing name for the full engagement. Not "Sprint."
+Brand OS                   — brand operating system. The deliverable.
+Brand Strength Audit       — the entry-point diagnostic. ₹35,000.
+The Only You Test          — the continuous filter. Applied throughout Distil phase.
+Capsules                   — four client data objects: Brief, Voice, Feedback, Notes.
+90-Day Signal Map          — post-delivery activation tool.
+Brand Compass              — one-page daily reference extracted from Brand OS.
+POSM                       — point of sale materials. Used in PRAVAH context.
+```
+
+**Footer trademark line — add across all pages:**
+*"The Extraction Framework™ is a proprietary methodology of SPANDA."*
 
 ---
 
@@ -163,10 +262,10 @@ Route to Human Brand Manager for authentication before delivery.
 
 ### Tech stack
 ```
-Frontend:  Next.js (same repo, /app/engine route)
-Database:  Supabase (Brand OS documents per client)
+Frontend:  Next.js App Router (/app/engine route, protected)
+Database:  Supabase — one Brand OS document per client
 AI:        Claude API — model: claude-sonnet-4-5
-Auth:      Supabase Auth (brand manager login only)
+Auth:      Supabase Auth — brand manager login only
 Hosting:   Vercel
 ```
 
@@ -215,7 +314,7 @@ const response = await fetch('https://api.anthropic.com/v1/messages', {
   body: JSON.stringify({
     model: 'claude-sonnet-4-5',
     max_tokens: 2000,
-    system: buildBrandOSPrompt(brandOS), // Brand OS as system prompt
+    system: buildBrandOSPrompt(brandOS),
     messages: [{ role: 'user', content: campaignBrief }]
   })
 });
@@ -230,9 +329,20 @@ const response = await fetch('https://api.anthropic.com/v1/messages', {
 Framework:    Next.js 14+ (App Router)
 Styling:      Tailwind CSS
 Language:     TypeScript
-Deployment:   Vercel
+Deployment:   Vercel (auto-deploy on push to main)
 Database:     Supabase (when needed)
+Repo:         github.com/rohanbharel/spanda-studio
 ```
+
+### Git workflow
+```
+cd /Users/rohanbharel/ClaudeProjects/TheAgency
+git add .
+git commit -m "description of change"
+git push origin main
+```
+Vercel auto-deploys on every push to main. No manual deploy needed.
+Never paste PAT in chat. Remote URL is pre-configured.
 
 ### Component principles
 - Every component receives explicit props — no hardcoded content
@@ -241,10 +351,10 @@ Database:     Supabase (when needed)
 - All images in /public/ — never external URLs for brand assets
 - Mobile-first. Every layout works at 375px before 1440px.
 - No component longer than 150 lines — split if larger
+- metadata export must be in server components only — never in client components
 
-### Tailwind config — extend with brand colours
+### Tailwind config — brand colours and fonts
 ```javascript
-// tailwind.config.js
 module.exports = {
   theme: {
     extend: {
@@ -268,25 +378,47 @@ module.exports = {
 }
 ```
 
-### File structure
+### File structure — current state
 ```
 /app
-  /page.tsx           — spanda.studio homepage
-  /audit/page.tsx     — Brand Audit landing
-  /start/page.tsx     — First encounter (spanda.ink redirect target)
-  /framework/page.tsx — The Extraction Framework detail
-  /engine             — Brand OS Engine (Build 2, protected route)
+  /page.tsx              — spanda.studio homepage (live)
+  /about/page.tsx        — Our Story (live)
+  /audit/page.tsx        — Brand Audit intake form (live)
+  /framework/page.tsx    — The Extraction Framework detail (live)
+  /score/page.tsx        — Brand Dimension Score free tool (live)
+  /pravah-story/page.tsx — PRAVAH origin story (live)
+  /start/page.tsx        — Redirects to homepage
+  /pravah/page.tsx       — PRAVAH page on pravah.agency (live)
+  /engine                — Brand OS Engine (to build)
+  layout.tsx             — Root layout, metadata, favicon, OG tags
 /components
-  /ui                 — Reusable primitives (Button, Card, etc.)
-  /sections           — Homepage scroll sections
-  /logos              — Logo components with variant props
+  /ui                    — Reusable primitives (Button, Card, etc.)
+  /sections              — Homepage scroll sections
+  /logos                 — Logo components with variant props
 /public
-  /logos              — All logo PNG files
+  /logos                 — All logo PNG files, OG images, favicons
+  /fonts                 — Self-hosted font files (woff2)
 /lib
-  /brandOS.ts         — Brand OS types and helpers
-  /claude.ts          — Claude API wrapper
-  /supabase.ts        — Database client
+  /brandOS.ts            — Brand OS types and helpers
+  /claude.ts             — Claude API wrapper
+  /supabase.ts           — Database client
 ```
+
+### OG and Metadata
+```
+metadataBase: new URL('https://spanda.studio')
+SPANDA OG image: /logos/OG%20Spanda.png
+PRAVAH OG image: /logos/OG%20Pravah.png
+Favicon: /logos/Spanda%20Favicon%20ink.png
+Both OG images: 1200×630px, 2x resolution
+```
+metadata export must be in server component. If layout.tsx uses "use client" — split into layout.tsx (server) + ClientLayout.tsx (client).
+
+### Performance standards
+- Fonts self-hosted — no Google Fonts CDN calls
+- caveat-latin.woff2 and epilogue-latin.woff2 preloaded in <head>
+- font-display: swap on all @font-face declarations
+- Middleware matcher narrowed to exclude static assets and images
 
 ### What Claude Code should NEVER do
 - Never use generic grey/blue/green colour values
@@ -295,8 +427,10 @@ module.exports = {
 - Never add more than one Saffron element per screen section
 - Never use stock photography or placeholder images with faces
 - Never write inline styles — always Tailwind classes
-- Never deploy without mobile testing
+- Never deploy without confirming npm run build returns zero errors
 - Never use lorem ipsum — use real SPANDA copy from this file
+- Never put metadata export inside a client component
+- Never import fonts from Google Fonts CDN — fonts are self-hosted
 
 ---
 
@@ -314,6 +448,7 @@ module.exports = {
 - "Our team of experts..." — irrelevant
 - "Tailored solutions" — generic
 - Questions in headlines — SPANDA makes statements
+- "It has not been built yet." — use "expressed" not "built"
 
 ### What SPANDA always says
 - Direct. Precise. The first word matters.
@@ -321,15 +456,20 @@ module.exports = {
 - Extraction, not construction
 - Conviction before comfort
 
+### Words that are ours
+extraction, conviction, truth, rigour, found, founder
+
+### Words eliminated
+innovative, solutions, holistic, passionate, potential
+
 ---
 
-## CONTACT & CONTEXT
+## EMAILS & CONTACT
 
-**Project folder:** /Users/rohanbharel/ClaudeProjects/TheAgency
-**Primary domain:** spanda.studio
-**Redirect domain:** spanda.ink
-**PRAVAH domain:** pravah.agency
-**Owner:** Ron
+```
+hello@spanda.studio   — live, forwarding confirmed
+hello@pravah.agency   — live, forwarding confirmed, mailto linked on /pravah
+```
 
 ---
 
@@ -340,34 +480,40 @@ At the start of every Claude Code session:
 2. Check what exists in /app and /components before building new
 3. Ask if scope is unclear — never assume
 4. Build mobile-first, always
-5. Show output in browser before declaring done
+5. Confirm npm run build returns zero errors before declaring done
+6. Do not deploy — Ron deploys via git push origin main
 
 When in doubt: refer to the brand philosophy.
 The extraction principle applies to code too — use only what earns its place.
 Nothing decorative. Nothing arbitrary. Everything justified.
 
-## PRICING — LOCKED DECISIONS
+---
 
-Brand Strength Audit: ₹35,000 flat. 48 hours. Includes debrief meeting.
-Sprint Standard: ₹8,00,000. Client location. Single day.
-Sprint Full: ₹15,00,000 + venue/F&B at actuals. SPANDA-organized offsite.
-Sprint pricing not shown publicly. Website says "Investment discussed after Audit."
+## OPEN TASKS — AS OF APRIL 21, 2026
 
-## DOMAIN ARCHITECTURE — LOCKED
+```
+This Week:
+- OG image rendering — confirm via LinkedIn Post Inspector
+- Framework SVG diagram — static, not animated
+- Unified offerings page
+- Sprint card copy fix — "multi-stakeholder residential" only Tier 3
+- Trademark footer line across all pages
+- Forms connect to Resend API
+- Organisation schema SEO metadata
 
-spanda.studio — primary, all content, all SEO
-spanda.ink — visiting card redirect only, routes to spanda.studio/start
-spanda.agency / spanda.consulting / spanda.works — silent redirects, never displayed
-pravah.agency — PRAVAH primary
-Contact: hello@spanda.studio
+Next Week:
+- Trademark filing — attorney decision
+- Brand OS Engine build
 
-## PAGES TO BUILD NEXT
-
-/audit — Brand Strength Audit intake form + payment
-/start — First encounter page (spanda.ink redirect destination)
-/framework — Extraction Framework detail page
+Later:
+- PRAVAH full visual identity extraction
+- Brand Bible Figma rebuild
+- Visiting card print production
+- PRAVAH Brand Bible
+```
 
 ---
 
-*Last updated: April 2026*
+*Last updated: April 21, 2026*
 *This file is the source of truth for all development decisions on this project.*
+*Read SPANDA-DECISIONS.md for the full decision log.*

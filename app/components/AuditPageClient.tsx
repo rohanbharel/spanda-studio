@@ -155,6 +155,9 @@ export default function AuditPageClient() {
             you&rsquo;ve seen the diagnosis.
           </p>
           <AuditForm onSubmitted={() => setSubmitted(true)} />
+          <p className="font-epilogue font-light text-[14px] text-stone mt-6 text-center leading-relaxed">
+            Once we receive your brief, we&rsquo;ll be in touch to schedule a conversation before the Audit begins — to understand each other and confirm this engagement makes sense for both sides.
+          </p>
         </div>
       </section>
     </>

@@ -46,7 +46,10 @@ interface BrandForm {
   website: string;
   description: string;
   competitors: string;
+  hiddenStory: string;
   uniqueClaim: string;
+  linkedin: string;
+  instagram: string;
 }
 
 interface ContactForm {
@@ -56,12 +59,13 @@ interface ContactForm {
   city: string;
 }
 
-const emptyBrand: BrandForm = { brandName: "", website: "", description: "", competitors: "", uniqueClaim: "" };
+const emptyBrand: BrandForm = { brandName: "", website: "", description: "", competitors: "", hiddenStory: "", uniqueClaim: "", linkedin: "", instagram: "" };
 const emptyContact: ContactForm = { firstName: "", email: "", company: "", city: "" };
 
 export default function ScoreForm() {
   const [brand, setBrand] = useState<BrandForm>(emptyBrand);
-  const [selected, setSelected] = useState<number | null>(null);
+  const [selected, setSelected] = useState<number | null>(1);
+  const [lockedMsg, setLockedMsg] = useState(false);
   const [contact, setContact] = useState<ContactForm>(emptyContact);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -220,6 +224,16 @@ export default function ScoreForm() {
                 <textarea required rows={2} value={brand.competitors} onChange={setBrandField("competitors")} className={textareaClass} />
               </div>
               <div>
+                <label className={labelClass}>Tell us something about how this was built that most people would never know.</label>
+                <textarea
+                  rows={3}
+                  value={brand.hiddenStory}
+                  onChange={setBrandField("hiddenStory")}
+                  className={textareaClass}
+                  placeholder="e.g. We rejected the first manufacturer because they couldn't meet our standard — spent eight months finding one who could. / The product was ready two years before we launched. We waited until we were certain. / There is a step in our process that costs three times more than the industry standard. We have never removed it."
+                />
+              </div>
+              <div>
                 <label className="font-epilogue font-medium text-[15px] text-ink mb-2 block">
                   The one thing you believe only your brand can honestly claim.
                 </label>
@@ -227,6 +241,16 @@ export default function ScoreForm() {
                 <p className="font-epilogue font-light text-[13px] text-stone-accessible mt-2">
                   This is the most important question on the page. Take your time.
                 </p>
+              </div>
+              <div>
+                <label className={labelClass}>LinkedIn company page</label>
+                <input type="text" value={brand.linkedin} onChange={setBrandField("linkedin")} className={inputClass} placeholder="linkedin.com/company/yourbrand" />
+                <p className="font-epilogue font-light text-[12px] text-stone-accessible mt-1">How your brand presents in a professional context</p>
+              </div>
+              <div>
+                <label className={labelClass}>Instagram handle</label>
+                <input type="text" value={brand.instagram} onChange={setBrandField("instagram")} className={inputClass} placeholder="@yourbrand" />
+                <p className="font-epilogue font-light text-[12px] text-stone-accessible mt-1">How your brand shows up with consumers</p>
               </div>
             </div>
 
@@ -240,17 +264,27 @@ export default function ScoreForm() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {dimensions.map(({ id, name, question }) => {
+                  const isClarity = id === 1;
                   const isActive = selected === id;
                   return (
                     <button
                       key={id}
                       type="button"
-                      onClick={() => setSelected(id)}
+                      onClick={() => {
+                        if (isClarity) {
+                          setSelected(id);
+                          setLockedMsg(false);
+                        } else {
+                          setLockedMsg(true);
+                        }
+                      }}
                       className="text-left px-4 py-3 border transition-colors"
                       style={{
                         background: isActive ? "#EDE8DF" : "transparent",
                         borderColor: isActive ? "#C97820" : "#D8D1C4",
                         borderLeftWidth: isActive ? "3px" : "1px",
+                        opacity: isClarity ? 1 : 0.45,
+                        cursor: isClarity ? "pointer" : "default",
                       }}
                     >
                       <p className="font-epilogue font-medium text-[14px] text-ink">{name}</p>
@@ -259,6 +293,11 @@ export default function ScoreForm() {
                   );
                 })}
               </div>
+              {lockedMsg && (
+                <p className="font-epilogue font-light text-[13px] text-stone-accessible mt-3">
+                  This dimension is part of the full Brand Strength Audit.
+                </p>
+              )}
             </div>
 
             {/* CONTACT CAPTURE */}

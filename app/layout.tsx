@@ -12,12 +12,14 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "SPANDA.",
     type: "website",
+    title: "SPANDA. — Brand Strategy & Identity",
+    description: "Every brand is already there. We draw it out.",
     images: [
       {
         url: "/logos/OG%20Spanda.png",
-        width: 1200,
-        height: 630,
-        alt: "SPANDA. — Every brand is already there. We draw it out.",
+        width: 2400,
+        height: 1260,
+        alt: "SPANDA. — Brand Strategy & Identity",
       },
     ],
   },

@@ -1,6 +1,6 @@
 # RON HQ — MASTER LOG
 ## SPANDA. & PRAVAH — All Decisions, Tasks, Pending Items
-### Last Updated: April 17, 2026 | Source: Full conversation history + Google Sheets sync
+### Last Updated: April 21, 2026 | Source: Full conversation history + Google Sheets sync
 
 ---
 
@@ -36,11 +36,28 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Apr 2026 | Brand | Brand Strategy & Identity confirmed as descriptor below SPANDA logo in footer | Done | — |
 | Apr 2026 | Brand | The founder's conviction is often the best-kept secret in their own organisation — key insight, locked | Done | — |
 | Apr 2026 | Brand | Brand OS redefined: founder's vision made transmittable for the first time | Done | — |
-| Apr 2026 | Brand | Brand Bible still needs Figma rebuild with actual Syne/Caveat fonts | Open | This Week |
+| Apr 2026 | Brand | PRAVAH identity v1 — using SPANDA colour tones for now. Navy accent not working on dark bg | Done | — |
+| Apr 2026 | Brand | PRAVAH visual identity v2 — full extraction session needed | Open | Later |
+| Apr 2026 | Brand | Brand Bible still needs Figma rebuild with actual Syne/Caveat fonts | Open | Later |
 | Apr 2026 | Brand | PRAVAH Brand Bible — full document needed | Open | Later |
 | Apr 2026 | Brand | Visiting card print production: 350gsm Parchment, matte, spot UV on Saffron period only | Open | Later |
 | Apr 2026 | Brand | Visiting card spec: front = Ink bg + SPANDA logo + Ron name/title | Open | Later |
 | Apr 2026 | Brand | Visiting card spec: back = Parchment + Caveat conviction line + QR → spanda.ink | Open | Later |
+
+---
+
+## BRAND — ASSETS IN /public/logos/
+
+| Date | Area | Update / Decision / Task | Status | Priority |
+|------|------|--------------------------|--------|----------|
+| Apr 2026 | Brand | spanda-light.png — confirmed in repo | Done | — |
+| Apr 2026 | Brand | spanda-dark.png — confirmed in repo | Done | — |
+| Apr 2026 | Brand | pravah-light.png — confirmed in repo | Done | — |
+| Apr 2026 | Brand | pravah-dark.png — confirmed in repo | Done | — |
+| Apr 2026 | Brand | Spanda Favicon ink.png — Saffron Bindu on Ink bg, 16×16px | Done | — |
+| Apr 2026 | Brand | Spanda Favicon parch.png — Saffron Bindu on Parchment bg, reserved | Done | — |
+| Apr 2026 | Brand | OG Spanda.png — 1200×630px, created at 2x for retina, Figma | Done | — |
+| Apr 2026 | Brand | OG Pravah.png — 1200×630px, created at 2x for retina, Figma | Done | — |
 
 ---
 
@@ -60,7 +77,8 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Apr 2026 | Brand | Our Story: "You already know what comes next." — closing line before CTA | Done | — |
 | Apr 2026 | Brand | SPANDA Our Story — final version locked | Done | — |
 | Apr 2026 | Brand | PRAVAH Story — final version locked | Done | — |
-| Apr 2026 | Brand | Our Story rewrite — Philosophy/Soul/Body structure — implement on /about | Open | This Week |
+| Apr 2026 | Brand | SPANDA Our Story implemented on /about | Done | — |
+| Apr 2026 | Brand | PRAVAH Story implemented on /pravah-story | Done | — |
 
 ---
 
@@ -95,9 +113,9 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Mar 2026 | Framework | Framework name locked: The Extraction Framework™ | Done | — |
 | Mar 2026 | Framework | Three phases locked: Excavate, Distil, Express | Done | — |
 | Apr 2026 | Framework | Foundation added above three phases: Conviction + Philosophy — not a phase, a prerequisite | Done | — |
-| Apr 2026 | Framework | Layer count: 12 layers across 3 phases — not 9. Site copy needs updating | Open | This Week |
-| Mar 2026 | Framework | Nine named tools locked: Convention Map, Frequency Scan, Soul Compass, Disruption Crosshair, Voice Archaeology, Visual Brief Engine, Architecture Matrix, 12-Dimension Scorecard, 90-Day Signal Map | Done | — |
-| Mar 2026 | Framework | The Only You Test locked: if another brand could claim it, it fails and is refined until it cannot | Done | — |
+| Apr 2026 | Framework | Layer count: 12 layers across 3 phases — locked. Site updated. | Done | — |
+| Apr 2026 | Framework | Nine named tools locked: Convention Map, Frequency Scan, Soul Compass, Disruption Crosshair, Voice Archaeology, Visual Brief Engine, Architecture Matrix, 12-Dimension Scorecard, 90-Day Signal Map | Done | — |
+| Apr 2026 | Framework | The Only You Test locked: if another brand could claim it, it fails and is refined until it cannot | Done | — |
 | Apr 2026 | Framework | Only You Test formalised as continuous filter throughout Distil phase | Done | — |
 | Mar 2026 | Framework | 12 Dimensions locked: Clarity, Distinction, Authenticity, Purpose Strength, Audience Resonance, Visual Coherence, Verbal Consistency, Market Disruption, Cultural Relevance, Competitive Differentiation, Brand Architecture Logic, Activation Readiness | Done | — |
 | Mar 2026 | Framework | Capsule System locked: four data objects per client — Brief, Voice, Feedback, Notes | Done | — |
@@ -108,9 +126,9 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Apr 2026 | Framework | Token cost per Sprint estimated: $40–70 USD (₹3,500–6,000) — build into P&L, never itemise on invoice | Done | — |
 | Apr 2026 | Framework | PRAVAH ongoing token cost: ₹2,000–8,000/month per active client — factor into retainer pricing | Open | Later |
 | Apr 2026 | Framework | Framework evaluated against TBWA, W&K, Wolff Olins, Landor, Pentagram — three gaps identified | Done | — |
-| Apr 2026 | Framework | Three gaps against benchmarks: pre-session research depth, societal relevance, cultural observation | Open | This Week |
+| Apr 2026 | Framework | Three gaps against benchmarks: pre-session research depth, societal relevance, cultural observation | Open | Loop 3 |
 | Apr 2026 | Framework | Societal relevance question added to Philosophy layer | Done | — |
-| Apr 2026 | Framework | Nine layers vs twelve dimensions inconsistency — reconcile and fix all site copy | Open | This Week |
+| Apr 2026 | Framework | The Extraction locked as name — replaces "Sprint" in all client-facing copy | Done | — |
 
 ### Sprint Structure & Process
 
@@ -210,11 +228,11 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Apr 2026 | Framework | Campaign line candidate: "We just turn the light on" | Done | — |
 | Apr 2026 | Framework | Campaign line candidate: "Every founder already knows. They just don't have the words yet." | Done | — |
 | Apr 2026 | Framework | Campaign line candidate: "We didn't make anything. We found what was already there." | Done | — |
-| Apr 2026 | Framework | Client objection probe: "Are you just extracting their own ideas?" — must be addressed early in all conversations | Done | — |
+| Apr 2026 | Framework | Client objection probe: "Are you just extracting their own ideas?" — must be addressed early | Done | — |
 | Apr 2026 | Framework | Accent analogy: founders cannot see their own conviction — too embedded to self-extract | Done | — |
 | Apr 2026 | Framework | Their process requires creative authority. Ours requires disappearing behind founder's truth | Done | — |
 | Apr 2026 | Framework | Client unprompted responses = real product: clarity, alignment, feeling seen | Done | — |
-| Apr 2026 | Framework | Three alternate expressions of core conviction emerged under pressure — document all three | Done | — |
+| Apr 2026 | Framework | Three alternate expressions of core conviction emerged under pressure — documented | Done | — |
 
 ### Open Framework Tasks
 
@@ -224,6 +242,7 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Apr 2026 | Framework | 12-Dimension scoring rubric not yet formalised — what constitutes a 31 vs 89 on Clarity? | Open | This Week |
 | Apr 2026 | Framework | Brand Strength Scorecard interactive tool for website not yet built | Open | Later |
 | Apr 2026 | Framework | Philosophy/Soul/Body structure — implement across all framework docs | Open | This Week |
+| Apr 2026 | Framework | Three gaps against benchmarks — close loop: pre-session research, societal relevance, cultural observation | Open | Loop 3 |
 
 ---
 
@@ -231,23 +250,24 @@ Date | Area | Update / Decision / Task | Status | Priority
 
 | Date | Area | Update / Decision / Task | Status | Priority |
 |------|------|--------------------------|--------|----------|
-| Apr 2026 | Operations | Three offerings clarified: Brand Dimension Report, Brand Strength Audit, Brand Sprint | Done | — |
+| Apr 2026 | Operations | Three offerings: Brand Dimension Report (free), Brand Strength Audit (₹35,000), The Extraction (₹8L–₹15L+) | Done | — |
+| Apr 2026 | Operations | "The Extraction" locked as client-facing name — replaces "Brand Sprint" everywhere | Done | — |
 | Apr 2026 | Operations | Internal SOP per offering defined | Done | — |
 | Apr 2026 | Operations | Tier 1 — Brand Strength Audit: ₹35,000 flat, 48 hours + debrief meeting | Done | — |
 | Apr 2026 | Operations | Audit debrief meeting: in-person if Delhi-NCR, video otherwise — non-negotiable inclusion | Done | — |
-| Apr 2026 | Operations | Audit debrief = pitch meeting for Sprint — conversion mechanism | Done | — |
-| Apr 2026 | Operations | Tier 2 — Sprint Standard: ₹8,00,000, client location, single full day, Delhi-NCR | Done | — |
-| Apr 2026 | Operations | Sprint Standard: client organises space, SPANDA sends pre-work brief 10 days in advance with setup requirements | Done | — |
-| Apr 2026 | Operations | Tier 3 — Sprint Full: ₹15,00,000 + venue/F&B at actuals, SPANDA-organised offsite, 1 day | Done | — |
-| Apr 2026 | Operations | Sprint Full: SPANDA selects venue (hotel/resort within 60–90 min of client), sends 3 quotes, client approves | Done | — |
-| Apr 2026 | Operations | Sprint Full: F&B invoiced at actuals with receipts, no markup, transparent | Done | — |
-| Apr 2026 | Operations | Sprint Full: budget ceiling agreed in advance — "we estimate ₹1.5–2.5L, get 3 quotes, you approve" | Done | — |
+| Apr 2026 | Operations | Audit debrief = pitch meeting for The Extraction — conversion mechanism | Done | — |
+| Apr 2026 | Operations | Tier 2 — The Extraction Standard: ₹8,00,000, client location, single full day, Delhi-NCR | Done | — |
+| Apr 2026 | Operations | Extraction Standard: client organises space, SPANDA sends pre-work brief 10 days in advance | Done | — |
+| Apr 2026 | Operations | Tier 3 — The Extraction Full: ₹15,00,000 + venue/F&B at actuals, SPANDA-organised offsite | Done | — |
+| Apr 2026 | Operations | Extraction Full: SPANDA selects venue (hotel/resort within 60–90 min of client), 3 quotes, client approves | Done | — |
+| Apr 2026 | Operations | Extraction Full: F&B invoiced at actuals with receipts, no markup, transparent | Done | — |
+| Apr 2026 | Operations | Extraction Full: budget ceiling agreed in advance — "we estimate ₹1.5–2.5L, 3 quotes, you approve" | Done | — |
 | Apr 2026 | Operations | Day ends with structured dinner — informal extraction session, SPANDA takes notes | Done | — |
-| Apr 2026 | Operations | Tier 4 — Sprint International: ₹25,00,000 + all travel at actuals | Done | — |
+| Apr 2026 | Operations | Tier 4 — Extraction International: ₹25,00,000 + all travel at actuals | Done | — |
 | Apr 2026 | Operations | Tier 4 not listed publicly — inbound requests only | Done | — |
-| Apr 2026 | Operations | Sprint pricing not shown on website — "Investment discussed after Audit" | Done | — |
-| Apr 2026 | Operations | Sprint Standard deliverables: pre-work research, full-day session, 3–4 weeks extraction work, Brand OS, visual + verbal identity, 90-Day Signal Map, one revision round | Done | — |
-| Apr 2026 | Operations | Sprint Full adds: residential format, post-delivery 90-day check-in | Done | — |
+| Apr 2026 | Operations | Extraction pricing not shown on website — "Investment discussed after Audit" | Done | — |
+| Apr 2026 | Operations | Standard deliverables: pre-work research, full-day session, 3–4 weeks extraction work, Brand OS, visual + verbal identity, 90-Day Signal Map, one revision round | Done | — |
+| Apr 2026 | Operations | Full adds: residential format, post-delivery 90-day check-in | Done | — |
 | Apr 2026 | Operations | AI framing locked: research and consistency layer, not replacement for human judgment | Done | — |
 | Apr 2026 | Operations | RON HQ tracking sheet set up in Google Sheets | Done | — |
 | Apr 2026 | Operations | Loop 1 fully closed — forms, email, domains, SEO, performance all live | Done | — |
@@ -269,7 +289,7 @@ Date | Area | Update / Decision / Task | Status | Priority
 
 | Date | Area | Update / Decision / Task | Status | Priority |
 |------|------|--------------------------|--------|----------|
-| Apr 2026 | Business | Year one target: 2 Sprint clients + 6 audits = approximately ₹18L revenue | Done | — |
+| Apr 2026 | Business | Year one target: 2 Extraction clients + 6 audits = approximately ₹18L revenue | Done | — |
 | Apr 2026 | Business | Year one objective: proof of methodology not revenue maximisation | Done | — |
 | Apr 2026 | Business | One strong case study worth more than ten audits for future pipeline | Done | — |
 | Apr 2026 | Business | Cost structure: near zero fixed costs — viable solo founder model | Done | — |
@@ -283,19 +303,19 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Mar 2026 | Legal | Holding company name candidates: BINDU, ALEPH, CERNO, PRIMA, LOCUS | Open | Urgent |
 | Mar 2026 | Legal | Holding company name pending Brahma Jyoti numerology confirmation | Open | Urgent |
 | Mar 2026 | Legal | Holding company registration pending name confirmation | Open | Urgent |
-| Apr 2026 | Legal | Trademark: "SPANDA." — unregistered ™, needs filing Class 35 + Class 41 | Open | Urgent |
-| Apr 2026 | Legal | Trademark: "PRAVAH" — unregistered ™, needs filing Class 35 + Class 41 | Open | Urgent |
-| Apr 2026 | Legal | Trademark: "The Extraction Framework™" — unregistered ™, needs filing Class 35 + Class 41 | Open | Urgent |
-| Apr 2026 | Legal | Trademark: SPANDA. device mark (logo with Saffron period) — needs separate filing | Open | Urgent |
-| Apr 2026 | Legal | Total trademark filings needed: 4 word/device marks × 2 classes = 8 applications | Open | Urgent |
-| Apr 2026 | Legal | Government statutory fee: ₹4,500 per class — total ₹36,000 if DPIIT recognised | Open | Urgent |
-| Apr 2026 | Legal | Register under Startup India / DPIIT first for professional fee waiver — do before filing | Open | Urgent |
-| Apr 2026 | Legal | Run trademark search at ipindia.gov.in before attorney meeting | Open | Urgent |
-| Apr 2026 | Legal | Recommended attorneys — Tier 1: Remfry & Sagar (Gurugram), Lall & Sethi (Delhi, 2024 Asia IP Award winner) | Open | Urgent |
-| Apr 2026 | Legal | Recommended attorneys — Tier 2: Khurana & Khurana (Delhi, Legal 500 ranked) | Open | Urgent |
-| Apr 2026 | Legal | Which IP attorney to engage: Remfry & Sagar vs Lall & Sethi vs Khurana & Khurana | Needs Sign-off | Urgent |
+| Apr 2026 | Legal | Trademark: "SPANDA." — unregistered ™, needs filing Class 35 + Class 41 | Open | Next Week |
+| Apr 2026 | Legal | Trademark: "PRAVAH" — unregistered ™, needs filing Class 35 + Class 41 | Open | Next Week |
+| Apr 2026 | Legal | Trademark: "The Extraction Framework™" — unregistered ™, needs filing Class 35 + Class 41 | Open | Next Week |
+| Apr 2026 | Legal | Trademark: SPANDA. device mark (logo with Saffron period) — needs separate filing | Open | Next Week |
+| Apr 2026 | Legal | Total trademark filings needed: 4 word/device marks × 2 classes = 8 applications | Open | Next Week |
+| Apr 2026 | Legal | Government statutory fee: ₹4,500 per class — total ₹36,000 if DPIIT recognised | Open | Next Week |
+| Apr 2026 | Legal | Register under Startup India / DPIIT first for professional fee waiver — do before filing | Open | Next Week |
+| Apr 2026 | Legal | Run trademark search at ipindia.gov.in before attorney meeting | Open | Next Week |
+| Apr 2026 | Legal | Trademark filing deferred — first use doctrine in India applies. File with evidence of use = stronger | Done | — |
+| Apr 2026 | Legal | Recommended attorneys — Tier 1: Remfry & Sagar (Gurugram), Lall & Sethi (Delhi, 2024 Asia IP Award winner) | Open | Next Week |
+| Apr 2026 | Legal | Recommended attorneys — Tier 2: Khurana & Khurana (Delhi, Legal 500 ranked) | Open | Next Week |
+| Apr 2026 | Legal | Which IP attorney to engage: Remfry & Sagar vs Lall & Sethi vs Khurana & Khurana | Needs Sign-off | Next Week |
 | Apr 2026 | Legal | Footer line to add across site: "The Extraction Framework™ is a proprietary methodology of SPANDA." | Open | This Week |
-| Apr 2026 | Legal | Trademark footer line not yet added to site | Open | This Week |
 | Apr 2026 | Legal | Copyright registration — Brand Bible, logos — ₹1,000–2,000 per work | Open | Later |
 | Apr 2026 | Legal | spanda.foundation occupied by UN-affiliated NGO — do not use, trademark conflict risk | Done | — |
 | Apr 2026 | Legal | spanda.institute occupied by yoga school since 2009 — do not use | Done | — |
@@ -304,7 +324,7 @@ Date | Area | Update / Decision / Task | Status | Priority
 
 ## WEBSITE — spanda.studio
 
-### Completed
+### Live Pages — Confirmed
 
 | Date | Area | Update / Decision / Task | Status | Priority |
 |------|------|--------------------------|--------|----------|
@@ -313,7 +333,6 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Mar 2026 | Website | Domain registered: spanda.agency (silent redirect) via Spaceship | Done | — |
 | Mar 2026 | Website | Domain registered: spanda.consulting (silent redirect) via Namecheap | Done | — |
 | Mar 2026 | Website | Domain registered: spanda.works (silent redirect) via Namecheap | Done | — |
-| Mar 2026 | Website | Domain registered: pravah.agency (PRAVAH primary) via Spaceship | Done | — |
 | Mar 2026 | Website | Registrar: Spaceship primary, Cloudflare DNS | Done | — |
 | Mar 2026 | Website | GoDaddy flagged as unsuitable after Feb 2026 ToS changes | Done | — |
 | Apr 2026 | Website | Next.js 14 + Tailwind + TypeScript project scaffolded | Done | — |
@@ -321,51 +340,53 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Apr 2026 | Website | GitHub repo created: rohanbharel/spanda-studio (public) | Done | — |
 | Apr 2026 | Website | Deployed on Vercel: spanda-studio.vercel.app live | Done | — |
 | Apr 2026 | Website | spanda.studio custom domain connected via Cloudflare DNS | Done | — |
-| Apr 2026 | Website | pravah.agency connected — redirects to spanda.studio | Done | — |
-| Apr 2026 | Website | Homepage — Moment 1 Hero: built and confirmed | Done | — |
-| Apr 2026 | Website | Homepage — Moment 2 Problem: built and confirmed | Done | — |
-| Apr 2026 | Website | Homepage — Moment 3 Framework: built and confirmed | Done | — |
-| Apr 2026 | Website | Homepage — Moment 4 Proof (scorecard rebuilt as dimension cards): built and confirmed | Done | — |
-| Apr 2026 | Website | Homepage — Moment 5 Entry Points: built and confirmed, ₹35,000 Audit + Sprint "Investment discussed" | Done | — |
-| Apr 2026 | Website | Homepage — Moment 6 Philosophy: built and confirmed | Done | — |
-| Apr 2026 | Website | Homepage — Footer: SPANDA 256px + PRAVAH 189px, two-logo lockup, confirmed | Done | — |
+| Apr 2026 | Website | Homepage — all 6 scroll moments built and confirmed | Done | — |
+| Apr 2026 | Website | Homepage — Moment 5 Where to Begin: Audit ₹35,000 primary card + two secondary cards | Done | — |
+| Apr 2026 | Website | Homepage — Footer: SPANDA 256px + PRAVAH 189px, Delhi India, two-logo lockup | Done | — |
 | Apr 2026 | Website | Nav: Work/Framework/Start links, Ink bg, logo left | Done | — |
-| Apr 2026 | Website | /about page — built per prompt spec | Done | — |
-| Apr 2026 | Website | /audit page — built per prompt spec, form → "Noted." confirmation | Done | — |
-| Apr 2026 | Website | /framework page — built per prompt spec | Done | — |
-| Apr 2026 | Website | /score page — built per prompt spec, 12 dimension cards, form → "We have it." | Done | — |
-| Apr 2026 | Website | /start page finalised as redirect to homepage — no separate page | Done | — |
-| Apr 2026 | Website | Domain outward communication unified to spanda.studio only | Done | — |
-| Apr 2026 | Website | spanda.ink appears only on visiting card back, tiny, below QR | Done | — |
+| Apr 2026 | Website | /about page — Our Story implemented, Caveat 28px, Bindu dot, closing on Ink | Done | — |
+| Apr 2026 | Website | /audit page — built, form working, emails received | Done | — |
+| Apr 2026 | Website | /framework page — built, Fraunces block removed, alignment unified, phases only publicly | Done | — |
+| Apr 2026 | Website | /score page — built, headline centred, URL field free text, form working | Done | — |
+| Apr 2026 | Website | /pravah-story — section labels removed, italic opening scene, PRAVAH. standalone arrival, line rhythm fixed | Done | — |
+| Apr 2026 | Website | /start page — redirect to homepage | Done | — |
 | Apr 2026 | Website | Font self-hosting implemented — Google Fonts removed | Done | — |
+| Apr 2026 | Website | Font preload added: caveat-latin.woff2 + epilogue-latin.woff2 | Done | — |
+| Apr 2026 | Website | font-display: swap applied to Caveat and Epilogue | Done | — |
 | Apr 2026 | Website | Accessibility fixes — contrast, touch targets | Done | — |
-| Apr 2026 | Website | Google Search Console verified — sitemap submitted | Done | — |
+| Apr 2026 | Website | Mobile test at 375px — all pages confirmed good | Done | — |
+| Apr 2026 | Website | Favicon — Saffron Bindu on Ink bg, confirmed live on browser tab | Done | — |
+| Apr 2026 | Website | Favicon path: /logos/Spanda Favicon ink.png — used for both SPANDA and PRAVAH | Done | — |
+| Apr 2026 | Website | OG images — OG Spanda.png + OG Pravah.png uploaded to /public/logos/ | Done | — |
+| Apr 2026 | Website | OG metadata added to layout.tsx — metadataBase + URL encoded paths | Done | — |
+| Apr 2026 | Website | OG image rendering in production — in progress, LinkedIn inspector showing no image yet | Open | Today |
+| Apr 2026 | Website | hello@pravah.agency — mailto hyperlink live on /pravah page, Saffron colour | Done | — |
+| Apr 2026 | Website | Score URL field — https:// requirement removed, free text, placeholder "yourwebsite.com" | Done | — |
+| Apr 2026 | Website | Both forms confirmed working — emails received on both accounts | Done | — |
+| Apr 2026 | Website | Google Search Console — spanda.studio verified, sitemap submitted | Done | — |
+| Apr 2026 | Website | Google Search Console — pravah.agency added as property, verified via Cloudflare DNS | Done | — |
+| Apr 2026 | Website | Google Search Console — both sitemaps confirmed Success, 70 URLs each | Done | — |
+| Apr 2026 | Website | Google Search Console — /pravah-story URL inspection + indexing requested | Done | — |
+| Apr 2026 | Website | 3 pages indexed: homepage (14 Apr), /pravah-story (14 Apr), /about (12 Apr) | Done | — |
 | Apr 2026 | Website | Category line added to homepage hero | Done | — |
 | Apr 2026 | Website | Keyword seeding across audit and framework pages | Done | — |
+| Apr 2026 | Website | Domain outward communication unified to spanda.studio only | Done | — |
+| Apr 2026 | Website | spanda.ink appears only on visiting card back, tiny, below QR | Done | — |
 
-### Open
+### Open Website Tasks
 
 | Date | Area | Update / Decision / Task | Status | Priority |
 |------|------|--------------------------|--------|----------|
-| Apr 2026 | Website | SEO metadata: Organisation schema + page-level meta — confirm live | Open | This Week |
-| Apr 2026 | Website | /audit and /score forms: console.log only, backend not connected | Open | This Week |
-| Apr 2026 | Website | Connect /audit form to Resend + Supabase backend | Open | This Week |
-| Apr 2026 | Website | Connect /score form to Resend + internal Slack notification | Open | This Week |
-| Apr 2026 | Website | All internal links audit — verify all routes resolve correctly | Open | This Week |
-| Apr 2026 | Website | Mobile test at 375px — all pages | Open | This Week |
-| Apr 2026 | Website | npm run build — confirm zero errors before next deploy | Open | This Week |
+| Apr 2026 | Website | OG image rendering — LinkedIn inspector showing no image. Client component issue suspected | Open | Today |
+| Apr 2026 | Website | Framework SVG diagram — approved for build, static not animated | Open | This Week |
+| Apr 2026 | Website | Unified offerings page to build — /start or new page | Open | This Week |
+| Apr 2026 | Website | Sprint card copy: update "multi-stakeholder residential" — only Tier 3, not Tier 2 | Open | This Week |
+| Apr 2026 | Website | Trademark footer line: "The Extraction Framework™ is a proprietary methodology of SPANDA." | Open | This Week |
+| Apr 2026 | Website | SEO metadata: Organisation schema — confirm live | Open | This Week |
 | Apr 2026 | Website | spanda.ink → spanda.studio redirect — confirm working | Open | This Week |
 | Apr 2026 | Website | spanda.agency / spanda.consulting / spanda.works → redirect confirm | Open | This Week |
-| Apr 2026 | Website | Delhi, India added to footer — push pending | Open | Today |
-| Apr 2026 | Website | CLAUDE.md update with all locked decisions + colour and footer changes | Open | Today |
-| Apr 2026 | Website | Framework page: remove "9 layers" — show three phases only publicly | Open | This Week |
-| Apr 2026 | Website | Unified offerings page to build — /start or new page | Open | This Week |
-| Apr 2026 | Website | SPANDA Our Story to implement on /about | Open | This Week |
-| Apr 2026 | Website | PRAVAH story to implement on /pravah-story | Open | Later |
-| Apr 2026 | Website | Favicon — Saffron Bindu dot needed | Open | This Week |
-| Apr 2026 | Website | Activation agency fix on /about page | Open | This Week |
-| Apr 2026 | Website | Domain renewals: assess spanda.works and spanda.consulting at renewal — drop if zero referral traffic | Open | Someday |
-| Apr 2026 | Website | Confirm all pages are live and functional at spanda.studio before announcing | Needs Sign-off | This Week |
+| Apr 2026 | Website | Domain renewals: assess spanda.works and spanda.consulting — drop if zero referral traffic | Open | Someday |
+| Apr 2026 | Website | Confirm all pages are live and functional before announcing publicly | Needs Sign-off | This Week |
 
 ### Deferred
 
@@ -381,9 +402,29 @@ Date | Area | Update / Decision / Task | Status | Priority
 
 | Date | Area | Update / Decision / Task | Status | Priority |
 |------|------|--------------------------|--------|----------|
-| Apr 2026 | Website | pravah.agency — proper holding page needed as separate Vercel project | Open | Later |
-| Apr 2026 | Website | pravah.agency full page architecture defined — build after first client | Open | Later |
-| Apr 2026 | Website | PRAVAH site to include: proof that the OS engine works, case study from first client | Deferred | Later |
+| Mar 2026 | Website | Domain registered: pravah.agency via Spaceship | Done | — |
+| Apr 2026 | Website | pravah.agency — live as separate Vercel project | Done | — |
+| Apr 2026 | Website | pravah.agency canonical set to https://pravah.agency — separate from spanda.studio | Done | — |
+| Apr 2026 | Website | Separate sitemap for pravah.agency created at /pravah/sitemap.ts | Done | — |
+| Apr 2026 | Website | /pravah page — five USPs: Campaign Creation, Content Generation, Brand Consistency, Creative Excellence, Measurable Impact | Done | — |
+| Apr 2026 | Website | Middleware fixed — matcher narrowed to exclude static assets, images loading correctly | Done | — |
+| Apr 2026 | Website | /pravah-story H1 — sr-only, visible heading removed, SEO H1 retained hidden | Done | — |
+| Apr 2026 | Website | /pravah title duplicate fixed using absolute title override | Done | — |
+| Apr 2026 | Website | pravah.agency full build — after first client | Deferred | Later |
+| Apr 2026 | Website | PRAVAH site to include: proof that OS engine works, case study from first client | Deferred | Later |
+
+---
+
+## SEO — CURRENT STATE
+
+| Date | Area | Update / Decision / Task | Status | Priority |
+|------|------|--------------------------|--------|----------|
+| Apr 2026 | SEO | /about meta description trimmed to under 155 chars | Done | — |
+| Apr 2026 | SEO | /pravah title duplicate fixed | Done | — |
+| Apr 2026 | SEO | /pravah-story H1 SEO retained hidden | Done | — |
+| Apr 2026 | SEO | 3 pages indexed as of Apr 21 2026 | Done | — |
+| Apr 2026 | SEO | Both sitemaps submitted and confirmed Success | Done | — |
+| Apr 2026 | SEO | OG title flagged as short (35 chars) — optimal 50–60 chars | Open | This Week |
 
 ---
 
@@ -396,15 +437,12 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Mar 2026 | Dev | Brand OS as system prompt per API call — one Brand OS per client in Supabase | Done | — |
 | Mar 2026 | Dev | Generation flow: Brand manager selects client → OS loads → brief entered → Claude generates → human reviews → client receives | Done | — |
 | Mar 2026 | Dev | Human brand manager authentication layer before any output reaches client | Done | — |
-| Apr 2026 | Dev | CLAUDE.md updated with pricing, domain architecture, pages to build | Done | — |
-| Apr 2026 | Dev | Font self-hosting implemented — Google Fonts removed | Done | — |
-| Apr 2026 | Dev | Accessibility fixes — contrast, touch targets | Done | — |
-| Apr 2026 | Dev | CLAUDE.md needs: pricing architecture section added | Open | This Week |
-| Apr 2026 | Dev | CLAUDE.md needs: domain architecture final state documented | Open | This Week |
-| Apr 2026 | Dev | Form not connected to Resend API yet | Open | This Week |
-| Apr 2026 | Dev | Google Search Console setup — verified | Done | — |
-| Apr 2026 | Dev | hello@spanda.studio email forwarding | Open | This Week |
-| Mar 2026 | Dev | Brand OS engine build deferred until first client engaged and first manual OS delivered | Deferred | Later |
+| Apr 2026 | Dev | Brand OS engine: build before first client so demo is live — first client activates it live | Done | — |
+| Apr 2026 | Dev | Forms not yet connected to Resend API — console.log only | Open | This Week |
+| Apr 2026 | Dev | GitHub repo: rohanbharel/spanda-studio — git remote configured, PAT workflow set | Done | — |
+| Apr 2026 | Dev | PAT revoked after exposure in chat — new token generated, stored securely offline | Done | — |
+| Apr 2026 | Dev | Git push workflow: git add . → git commit → git push origin main | Done | — |
+| Apr 2026 | Dev | Vercel auto-deploys on push to main | Done | — |
 
 ---
 
@@ -415,9 +453,9 @@ Date | Area | Update / Decision / Task | Status | Priority
 | Apr 2026 | Client | No clients yet — website is primary lead generation tool | Open | Urgent |
 | Apr 2026 | Client | First client: run framework manually, deliver Brand OS as Notion doc or PDF — no automation yet | Open | Urgent |
 | Apr 2026 | Client | First client engagement will inform what Brand OS engine needs to hold and generate | Open | Later |
-| Apr 2026 | Client | After first client: rebuild Moment 4 scorecard with their actual before/after scores | Open | Later |
+| Apr 2026 | Client | After first client: rebuild Moment 4 scorecard with actual before/after scores | Open | Later |
 | Apr 2026 | Client | After first client: build founder page with case study | Open | Later |
-| Apr 2026 | Client | PRAVAH website and OS engine build triggered by first client, not before | Open | Later |
+| Apr 2026 | Client | PRAVAH website and OS engine full build triggered by first client, not before | Open | Later |
 
 ---
 
@@ -427,10 +465,10 @@ Date | Area | Update / Decision / Task | Status | Priority
 |------|------|--------------------------|--------|----------|
 | Mar 2026 | Operations | Holding company structure: SPANDA + PRAVAH under one holding entity | Done | — |
 | Mar 2026 | Operations | Holding company name candidates: BINDU, ALEPH, CERNO, PRIMA, LOCUS | Open | Urgent |
-| Mar 2026 | Operations | Brahma Jyoti numerology consultation — name decision pending this | Open | Urgent |
+| Mar 2026 | Operations | Brahma Jyoti numerology consultation — name decision pending | Open | Urgent |
 | Apr 2026 | Operations | Company registration: pending holding company name + Brahma Jyoti confirmation | Open | Urgent |
-| Apr 2026 | Operations | Contact email live: hello@spanda.studio | Done | — |
-| Apr 2026 | Operations | Holding company name: choose from BINDU/ALEPH/CERNO/PRIMA/LOCUS after Brahma Jyoti | Needs Sign-off | Urgent |
+| Apr 2026 | Operations | hello@spanda.studio — live, forwarding confirmed | Done | — |
+| Apr 2026 | Operations | hello@pravah.agency — live, forwarding confirmed | Done | — |
 
 ---
 
@@ -440,12 +478,13 @@ Date | Area | Update / Decision / Task | Status | Priority
 |------|------|--------------------------|--------|----------|
 | Apr 2026 | Operations | Sprint card copy: update "multi-stakeholder residential" — only Tier 3, not Tier 2 | Needs Sign-off | This Week |
 | Apr 2026 | Operations | Holding company name: BINDU/ALEPH/CERNO/PRIMA/LOCUS — choose after Brahma Jyoti | Needs Sign-off | Urgent |
-| Apr 2026 | Legal | Which IP attorney to engage: Remfry & Sagar vs Lall & Sethi vs Khurana & Khurana | Needs Sign-off | Urgent |
+| Apr 2026 | Legal | Which IP attorney to engage: Remfry & Sagar vs Lall & Sethi vs Khurana & Khurana | Needs Sign-off | Next Week |
+| Apr 2026 | Website | OG image rendering confirmed in production | Needs Sign-off | Today |
 | Apr 2026 | Website | Confirm all pages live and functional at spanda.studio before announcing | Needs Sign-off | This Week |
 
 ---
 
-*Last updated: April 17, 2026*
+*Last updated: April 21, 2026*
 *Source: Complete SPANDA/PRAVAH conversation history + Google Sheets sync*
 *Owner: Ron*
-*Rows: Clean consolidated log — duplicates removed, statuses updated, all session decisions captured*
+*All duplicates removed. Statuses updated through April 21. Everything locked is locked. Everything open is tracked.*

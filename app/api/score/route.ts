@@ -44,9 +44,10 @@ ${brand.description}
 
 Three competitors they actually think about:
 ${brand.competitors}
-
+${brand.hiddenStory ? `\nSomething most people would never know about how it was built:\n${brand.hiddenStory}\n` : ""}
 The one thing only their brand can honestly claim:
 ${brand.uniqueClaim}
+${brand.linkedin ? `\nLinkedIn: ${brand.linkedin}` : ""}${brand.instagram ? `\nInstagram: ${brand.instagram}` : ""}
 
 ${"—".repeat(40)}
 Reply directly to this email to respond.
