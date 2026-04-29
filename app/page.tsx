@@ -430,10 +430,13 @@ export default function Home() {
       {/* Moment 6 — The Statement */}
       <section className="bg-ink py-16 md:py-24 px-6">
         <div className="max-w-[800px] mx-auto text-center">
-          <span className="w-2 h-2 rounded-full bg-saffron mx-auto mb-6 block" />
           <p className="font-caveat text-[32px] md:text-[48px] text-parchment leading-tight">
             When AI can generate any brand story in seconds, the only brand that matters is the one that&rsquo;s real.
           </p>
+          <span
+            className="block mx-auto mt-8"
+            style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#C97820" }}
+          />
         </div>
       </section>
 
