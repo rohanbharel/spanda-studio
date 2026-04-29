@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/logos/OG%20Spanda.png",
-        width: 2400,
-        height: 1260,
+        width: 1200,
+        height: 630,
         alt: "SPANDA. — Brand Strategy & Identity",
       },
     ],
@@ -81,7 +81,7 @@ export default function Home() {
 
         {/* Qualifier */}
         <p className="font-epilogue font-light text-[13px] text-stone mt-4">
-          ₹35,000&nbsp;&nbsp;·&nbsp;&nbsp;48 hours&nbsp;&nbsp;·&nbsp;&nbsp;Complete brand diagnosis
+          ₹35,000&nbsp;&nbsp;·&nbsp;&nbsp;7 days&nbsp;&nbsp;·&nbsp;&nbsp;Complete brand diagnosis
         </p>
       </main>
 
@@ -340,14 +340,14 @@ export default function Home() {
                 Brand Strength Audit
               </h3>
               <p className="font-epilogue font-light text-[15px] text-stone mt-2">
-                ₹35,000 · 48 hours · Debrief included
+                ₹35,000 · 7 days · Debrief included
               </p>
               <ul className="mt-4 space-y-2">
                 {[
                   "Complete Brand Strength Score — 12 dimensions",
                   "Your single biggest brand gap identified",
                   "A clear brief for what The Extraction will fix",
-                  "Delivered in 48 hours. In person or video debrief included.",
+                  "Delivered in 7 days. In person or video debrief included.",
                 ].map((item) => (
                   <li key={item} className="font-epilogue font-light text-[15px] text-stone flex gap-2">
                     <span className="shrink-0">—</span>
@@ -421,13 +421,22 @@ export default function Home() {
 
           {/* Closing line */}
           <p className="font-epilogue font-light italic text-[15px] text-stone text-center mt-8">
-            Start with the Audit. ₹35,000. 48 hours. You&rsquo;ll know exactly what The Extraction will fix.
+            Start with the Audit. ₹35,000. 7 days. You&rsquo;ll know exactly what The Extraction will fix.
           </p>
 
         </div>
       </section>
 
-      {/* Moment 6 — The Philosophy */}
+      {/* Moment 6 — The Statement */}
+      <section className="bg-ink py-16 md:py-24 px-6">
+        <div className="max-w-[800px] mx-auto text-center">
+          <p className="font-caveat text-[32px] md:text-[48px] text-parchment leading-tight">
+            When AI can generate any brand story in seconds, the only brand that matters is the one that&rsquo;s real.
+          </p>
+        </div>
+      </section>
+
+      {/* Moment 7 — The Philosophy */}
       <section className="bg-ink py-20 md:py-32 px-6">
         <div className="max-w-[800px] mx-auto">
 

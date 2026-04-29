@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/logos/OG%20Spanda.png",
-        width: 2400,
-        height: 1260,
+        width: 1200,
+        height: 630,
         alt: "SPANDA. — Brand Strategy & Identity",
       },
     ],

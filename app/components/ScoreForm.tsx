@@ -294,9 +294,17 @@ export default function ScoreForm() {
                 })}
               </div>
               {lockedMsg && (
-                <p className="font-epilogue font-light text-[13px] text-stone-accessible mt-3">
-                  This dimension is part of the full Brand Strength Audit.
-                </p>
+                <div className="bg-linen border-l-2 border-saffron p-5 rounded mt-4">
+                  <p className="font-epilogue font-semibold text-[15px] text-ink">
+                    This dimension is part of the full Brand Strength Audit.
+                  </p>
+                  <p className="font-epilogue font-light text-[14px] text-stone mt-2">
+                    The Audit scores all 12 dimensions across your complete brand expression. ₹35,000. 7 days. Debrief included.
+                  </p>
+                  <Link href="/audit" className="font-epilogue font-medium text-[14px] text-saffron mt-3 block hover:opacity-80 transition-opacity">
+                    Begin the Audit →
+                  </Link>
+                </div>
               )}
             </div>
 

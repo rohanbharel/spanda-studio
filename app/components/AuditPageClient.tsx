@@ -34,7 +34,7 @@ export default function AuditPageClient() {
             The Brand Strength Audit.
           </h1>
           <p className="font-epilogue font-light text-[18px] md:text-[20px] text-stone mt-4 max-w-[520px] leading-relaxed">
-            ₹35,000. 48 hours. A diagnosis that tells you exactly what your
+            ₹35,000. 7 days. A diagnosis that tells you exactly what your
             brand is and isn&rsquo;t doing.
           </p>
           <hr className="border-0 border-t border-dust mt-10" style={{ width: "60px" }} />
@@ -115,7 +115,7 @@ export default function AuditPageClient() {
               {
                 n: "2",
                 title: "We run the framework.",
-                body: "Your brand through all 12 dimensions. 48 hours. No shortcuts.",
+                body: "Your brand through all 12 dimensions. 7 days. No shortcuts.",
               },
               {
                 n: "3",
@@ -148,7 +148,7 @@ export default function AuditPageClient() {
             Request the Audit.
           </h2>
           <p className="font-epilogue font-semibold text-[22px] text-ink mt-4 text-center">
-            ₹35,000 — 48-hour turnaround
+            ₹35,000 — 7-day turnaround
           </p>
           <p className="font-epilogue font-light text-[14px] text-stone mt-2 text-center">
             Investment for The Extraction is discussed at the debrief — after

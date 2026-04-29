@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/logos/OG%20Spanda.png",
-        width: 2400,
-        height: 1260,
+        width: 1200,
+        height: 630,
         alt: "SPANDA. — Brand Strategy & Identity",
       },
     ],
@@ -77,9 +77,6 @@ export default function AboutPage() {
 
           {/* THE NAME */}
           <div className="mt-16 font-epilogue font-light text-[16px] md:text-[18px] text-stone leading-[1.85]">
-            <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
-              The Name
-            </p>
             <p className="mt-5">SPANDA came out of that silence.</p>
             <p className="mt-5">
               Out of the conviction that every founder already carries their
@@ -141,10 +138,6 @@ export default function AboutPage() {
 
           {/* THE IDENTITY */}
           <div className="mt-16 font-epilogue font-light text-[16px] md:text-[18px] text-stone leading-[1.85]">
-            <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
-              The Identity
-            </p>
-
             <p className="mt-8">Then the framework found our soul.</p>
             <p className="mt-5">Not a values list. A character.</p>
             <p className="mt-5">
@@ -160,10 +153,6 @@ export default function AboutPage() {
 
           {/* THE HAND */}
           <div className="mt-16 font-epilogue font-light text-[16px] md:text-[18px] text-stone leading-[1.85]">
-            <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
-              The Hand
-            </p>
-
             <p className="font-epilogue font-light text-[16px] md:text-[18px] text-ink mt-10 leading-[1.85]">
               The truest things a founder knows about their brand were never typed.
             </p>
@@ -188,9 +177,6 @@ export default function AboutPage() {
 
           {/* THE MARK */}
           <div className="mt-16 font-epilogue font-light text-[16px] md:text-[18px] text-stone leading-[1.85]">
-            <p className="font-epilogue font-semibold text-[11px] uppercase tracking-widest text-stone">
-              The Mark
-            </p>
             <Image
               src="/logos/spanda-light.png"
               alt="SPANDA."

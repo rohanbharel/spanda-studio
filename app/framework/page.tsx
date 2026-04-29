@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/logos/OG%20Spanda.png",
-        width: 2400,
-        height: 1260,
+        width: 1200,
+        height: 630,
         alt: "SPANDA. — Brand Strategy & Identity",
       },
     ],
@@ -89,7 +89,7 @@ export default function FrameworkPage() {
           <p className="font-epilogue font-light text-[16px] text-stone mt-4 leading-relaxed">
             The Audit is where it begins.
             <br />
-            ₹35,000. 48 hours. A complete diagnosis across 12 dimensions —
+            ₹35,000. 7 days. A complete diagnosis across 12 dimensions —
             with a debrief that tells you exactly what The Extraction will fix.
           </p>
           <Link

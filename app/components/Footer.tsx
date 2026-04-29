@@ -81,6 +81,9 @@ export default function Footer() {
               hello@spanda.studio
             </Link>
           </p>
+          <p className="font-epilogue font-light text-[11px] text-stone text-center" style={{ marginTop: "4px" }}>
+            Also accessible at spanda.ink
+          </p>
         </div>
 
       </div>
