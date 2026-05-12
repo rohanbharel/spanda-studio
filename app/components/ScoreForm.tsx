@@ -82,6 +82,11 @@ export default function ScoreForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selected) return;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(contact.email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
     setSubmitting(true);
     setError(null);
 
@@ -179,8 +184,7 @@ export default function ScoreForm() {
           <div className="max-w-[480px] mx-auto">
             <h2 className="font-caveat text-[40px] text-ink">We have it.</h2>
             <p className="font-epilogue font-light text-[16px] text-stone mt-4 leading-relaxed">
-              Your Brand Dimension Analysis will be in your inbox by tomorrow
-              morning. Every submission is reviewed before it leaves our desk.
+              Your Brand Dimension Analysis is on its way.
             </p>
             <p className="font-epilogue font-light text-[16px] text-stone mt-6">
               If you want to go further —
@@ -321,6 +325,11 @@ export default function ScoreForm() {
                   <p className="font-epilogue font-light text-[12px] text-stone-accessible mt-2 whitespace-nowrap">
                     Your analysis arrives here. No marketing emails. Ever.
                   </p>
+                  {error && (
+                    <p className="font-epilogue font-light text-[13px] text-saffron mt-1">
+                      {error}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <label className={labelClass}>Company</label>

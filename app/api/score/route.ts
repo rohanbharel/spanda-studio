@@ -11,6 +11,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(contact.email)) {
+      return NextResponse.json(
+        { error: "Invalid email address" },
+        { status: 400 }
+      );
+    }
+
     const FROM = process.env.RESEND_FROM ?? "SPANDA. <hello@spanda.studio>";
 
     await resend.batch.send([
@@ -59,13 +67,13 @@ Reply directly to this email to respond.
       from: FROM,
       to: contact.email,
       subject: "Your Brand Dimension Analysis is being prepared.",
-      text: `
-By tomorrow morning something considered
-will be in your inbox.
+      text: `Something just shifted.
+
+Not because of what we'll find.
+Because you decided to look.
 
 SPANDA.
-spanda.studio
-`.trim(),
+spanda.studio`,
     },
     ]);
 

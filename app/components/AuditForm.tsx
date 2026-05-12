@@ -35,6 +35,11 @@ export default function AuditForm({ onSubmitted }: { onSubmitted?: () => void })
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
     setSubmitting(true);
     setError(null);
 
@@ -60,7 +65,7 @@ export default function AuditForm({ onSubmitted }: { onSubmitted?: () => void })
       <div className="text-center py-16">
         <h3 className="font-caveat text-[36px] text-ink">Noted.</h3>
         <p className="font-epilogue font-light text-[16px] text-stone mt-4 max-w-[440px] mx-auto">
-          Expect a call within 24 hours to confirm fit before we begin.
+          We&rsquo;ll be in touch.
         </p>
         <p className="font-epilogue font-light text-[16px] text-stone mt-2">
           <Link
@@ -96,6 +101,11 @@ export default function AuditForm({ onSubmitted }: { onSubmitted?: () => void })
         <div>
           <label className={labelClass}>Email</label>
           <input required type="email" value={form.email} onChange={set("email")} className={inputClass} />
+          {error && (
+            <p className="font-epilogue font-light text-[13px] text-saffron mt-1">
+              {error}
+            </p>
+          )}
         </div>
         <div>
           <label className={labelClass}>Phone</label>

@@ -13,6 +13,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: "Invalid email address" },
+        { status: 400 }
+      );
+    }
+
     await resend.batch.send([
       // Notification to SPANDA.
       {
@@ -44,18 +52,25 @@ Reply directly to this email to respond.
         from: FROM,
         to: email,
         subject: "Most founders never ask this question.",
-        text: `
-Most brands aren't built.
-They're uncovered.
+        text: `Something brought you here.
 
-You've taken the first honest step toward
-finding what was always yours.
+Not a crisis. Not a campaign deadline.
+A quieter feeling — that what you're putting
+into the world isn't quite what you know
+this brand to be.
 
-You'll hear from us within 24 hours.
+The Brand Strength Audit begins with a conversation.
+The right questions surface what no brief can reach.
+
+We'll call within 24 hours. To listen.
+
+Seven days later, we sit together with what the framework found.
+Not a presentation. A reckoning.
+
+This is the first step toward finding it.
 
 SPANDA.
-spanda.studio
-`.trim(),
+spanda.studio`,
       },
     ]);
 

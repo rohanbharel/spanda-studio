@@ -12,13 +12,10 @@ export default function AuditPageClient() {
       <section className="bg-parchment min-h-screen flex items-center justify-center px-6">
         <div className="text-center">
           <h2 className="font-caveat text-[48px] text-ink leading-tight">
-            The process has begun.
+            We have it.
           </h2>
           <p className="font-epilogue font-light text-[16px] text-stone mt-4">
-            We&rsquo;ll be in touch within 24 hours.
-          </p>
-          <p className="font-epilogue font-light text-[14px] text-stone mt-2">
-            SPANDA.
+            What happens next is the beginning of finding what was always yours.
           </p>
         </div>
       </section>
