@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "SPANDA. is a brand strategy and identity consultancy for founders who want to find what their brand already is. Delhi, India.",
   metadataBase: new URL("https://spanda.studio"),
   openGraph: {
+    url: 'https://spanda.studio',
     siteName: "SPANDA.",
     type: "website",
     title: "SPANDA. — Brand Strategy & Identity",
