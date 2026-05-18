@@ -22,18 +22,19 @@ export const metadata: Metadata = {
     url: "https://pravah.agency",
     siteName: "PRAVAH",
     type: "website",
+    locale: "en_IN",
     images: [
       {
-        url: "/logos/OG%20Pravah.png",
-        width: 2400,
-        height: 1260,
+        url: "https://pravah.agency/logos/OG%20Pravah.png",
+        width: 1200,
+        height: 630,
         alt: "PRAVAH — The brand, moving in the world, as itself.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/logos/OG%20Pravah.png"],
+    images: ["https://pravah.agency/logos/OG%20Pravah.png"],
   },
 };
 
