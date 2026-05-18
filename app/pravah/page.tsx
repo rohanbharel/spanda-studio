@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: "https://pravah.agency/logos/OG%20Pravah.png",
+    url: 'https://pravah.agency/logos/OG%20Pravah.png?v=2',
         width: 1200,
         height: 630,
         alt: "PRAVAH — The brand, moving in the world, as itself.",
@@ -33,9 +33,11 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    images: ["https://pravah.agency/logos/OG%20Pravah.png"],
-  },
+  card: 'summary_large_image',
+  title: 'PRAVAH — Brand Activation & Creative Agency',
+  description: 'The brand, moving in the world, as itself. Completely.',
+  images: ['https://pravah.agency/logos/OG%20Pravah.png?v=2'],
+},
 };
 
 export default function PravahPage() {
