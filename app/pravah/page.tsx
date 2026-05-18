@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "brand content agency India",
     "AI marketing agency Delhi",
   ],
+other: {
+    image: 'https://pravah.agency/logos/OG-Pravah-2.png',
+  },
   alternates: { canonical: "https://pravah.agency" },
   openGraph: {
     title: "PRAVAH — Creative | A SPANDA. Company",
